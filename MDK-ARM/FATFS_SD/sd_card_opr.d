@@ -59,3 +59,13 @@ fatfs_sd\sd_card_opr.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 fatfs_sd\sd_card_opr.o: ..\Src\drv\sys\SysCommDef.h
 fatfs_sd\sd_card_opr.o: ..\Src\drv\uart\usart.h
 fatfs_sd\sd_card_opr.o: ..\Src\drv\sys\sys_data_type.h
+fatfs_sd\sd_card_opr.o: ..\Src\middle\fatfs\fatfs.h
+fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FatFs/src/ff.h
+fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FatFs/src/integer.h
+fatfs_sd\sd_card_opr.o: ..\Src\middle\fatfs\ffconf.h
+fatfs_sd\sd_card_opr.o: ../Core/Inc/main.h
+fatfs_sd\sd_card_opr.o: ..\Src\middle\fatfs\bsp_driver_sd.h
+fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
+fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
+fatfs_sd\sd_card_opr.o: ..\Src\middle\fatfs\sd_diskio.h

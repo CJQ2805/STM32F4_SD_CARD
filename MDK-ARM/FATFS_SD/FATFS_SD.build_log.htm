@@ -27,16 +27,20 @@ Project File Date:  06/20/2021
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\keil5\ARM\ARMCC\Bin'
 Build target 'FATFS_SD'
-compiling fatfs.c...
-..\Src\middle\fatfs\fatfs.c(82): warning:  #223-D: function "oSMonitOsDelay" declared implicitly
-              oSMonitOsDelay(1);
-..\Src\middle\fatfs\fatfs.c(89): warning:  #223-D: function "oSMonitOsDelay" declared implicitly
-              oSMonitOsDelay(1);
-..\Src\middle\fatfs\fatfs.c: 2 warnings, 0 errors
+compiling sd_card_opr.c...
+..\Src\tools\log.h(14): warning:  #1295-D: Deprecated declaration Log_init - give arg types
+  void Log_init();
+..\Src\middle\fatfs\fatfs.h(34): warning:  #1295-D: Deprecated declaration my_fmount - give arg types
+  FRESULT  my_fmount();
+..\Src\module\sd_card\sd_card_opr.c(30): warning:  #223-D: function "creat_task_info" declared implicitly
+      creat_task_info(sd_card_task_handele_tid, "sd_card task");
+..\Src\module\sd_card\sd_card_opr.c(31): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\module\sd_card\sd_card_opr.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=30380 RO-data=18876 RW-data=152 ZI-data=128072  
+Program Size: Code=35860 RO-data=19076 RW-data=164 ZI-data=128164  
 FromELF: creating hex file...
-"FATFS_SD\FATFS_SD.axf" - 0 Error(s), 2 Warning(s).
+"FATFS_SD\FATFS_SD.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -59,7 +63,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.1.2
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

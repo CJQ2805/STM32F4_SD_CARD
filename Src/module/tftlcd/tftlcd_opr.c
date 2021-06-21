@@ -9,6 +9,7 @@
 static void tftlcd_task(void const * argument)
 {
 	logblue("%s",(char*)argument);
+	logn();
 	LCD_Init();
 	POINT_COLOR=RED;
 	LCD_ShowString(10,80,240,24,24,"TFTLCD TEST");		

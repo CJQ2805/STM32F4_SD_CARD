@@ -68,3 +68,4 @@ fatfs_sd\fatfs.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 fatfs_sd\fatfs.o: ..\Src\drv\sys\SysCommDef.h
 fatfs_sd\fatfs.o: ..\Src\drv\uart\usart.h
 fatfs_sd\fatfs.o: ..\Src\drv\sys\sys_data_type.h
+fatfs_sd\fatfs.o: ..\Middlewares\Third_Party\FreeRTOS\Source\osmonit.h

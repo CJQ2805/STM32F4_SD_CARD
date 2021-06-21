@@ -31,7 +31,7 @@
 
 /* USER CODE END Includes */
 
-
+FRESULT  my_fmount();
 FRESULT my_mkfs(void);
 void MX_FATFS_Init(void);
 

@@ -1,12 +1,16 @@
 #include <sd_card_opr.h>
 #include <SysCommDef.h>
-
+#include "fatfs.h"
 
 
 static void sd_card_task(void const * argument)
 {
 	logblue("%s",(char*)argument);
-		
+	logn();
+	my_fmount();
+
+
+	
 	for(;;){ 
 		
 	
