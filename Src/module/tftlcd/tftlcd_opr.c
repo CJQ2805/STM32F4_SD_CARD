@@ -3,6 +3,9 @@
 #include <tftlcd_arg.h>
 #include <SysCommDef.h>
 
+
+
+
 static void tftlcd_task(void const * argument)
 {
 	logblue("%s",(char*)argument);

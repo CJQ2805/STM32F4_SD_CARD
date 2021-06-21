@@ -1,5 +1,5 @@
-fatfs_sd\bsp_driver_sd.o: ../FATFS/Target/bsp_driver_sd.c
-fatfs_sd\bsp_driver_sd.o: ../FATFS/Target/bsp_driver_sd.h
+fatfs_sd\bsp_driver_sd.o: ..\Src\middle\fatfs\bsp_driver_sd.c
+fatfs_sd\bsp_driver_sd.o: ..\Src\middle\fatfs\bsp_driver_sd.h
 fatfs_sd\bsp_driver_sd.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 fatfs_sd\bsp_driver_sd.o: ../Core/Inc/stm32f4xx_hal_conf.h
 fatfs_sd\bsp_driver_sd.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h

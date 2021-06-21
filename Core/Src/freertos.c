@@ -73,6 +73,7 @@ void MX_FREERTOS_Init(void) {
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 void create_tftlcd_task(void);
+void create_sd_card_task(void);
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -82,6 +83,7 @@ void StartTask(void)
 	
     printf("\r\nrun start-!\r\n");
 	create_tftlcd_task();
+	create_sd_card_task();
 }
 /* USER CODE END PM */
 

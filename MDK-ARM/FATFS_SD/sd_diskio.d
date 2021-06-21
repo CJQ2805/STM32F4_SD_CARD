@@ -1,9 +1,9 @@
-fatfs_sd\sd_diskio.o: ../FATFS/Target/sd_diskio.c
+fatfs_sd\sd_diskio.o: ..\Src\middle\fatfs\sd_diskio.c
 fatfs_sd\sd_diskio.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
 fatfs_sd\sd_diskio.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
 fatfs_sd\sd_diskio.o: ../Middlewares/Third_Party/FatFs/src/integer.h
 fatfs_sd\sd_diskio.o: ../Middlewares/Third_Party/FatFs/src/ff.h
-fatfs_sd\sd_diskio.o: ../FATFS/Target/ffconf.h
+fatfs_sd\sd_diskio.o: ..\Src\middle\fatfs\ffconf.h
 fatfs_sd\sd_diskio.o: ../Core/Inc/main.h
 fatfs_sd\sd_diskio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 fatfs_sd\sd_diskio.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -41,7 +41,7 @@ fatfs_sd\sd_diskio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 fatfs_sd\sd_diskio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 fatfs_sd\sd_diskio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 fatfs_sd\sd_diskio.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-fatfs_sd\sd_diskio.o: ../FATFS/Target/bsp_driver_sd.h
+fatfs_sd\sd_diskio.o: ..\Src\middle\fatfs\bsp_driver_sd.h
 fatfs_sd\sd_diskio.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 fatfs_sd\sd_diskio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 fatfs_sd\sd_diskio.o: ../Core/Inc/FreeRTOSConfig.h
@@ -56,6 +56,6 @@ fatfs_sd\sd_diskio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.
 fatfs_sd\sd_diskio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 fatfs_sd\sd_diskio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 fatfs_sd\sd_diskio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
-fatfs_sd\sd_diskio.o: ../FATFS/Target/sd_diskio.h
+fatfs_sd\sd_diskio.o: ..\Src\middle\fatfs\sd_diskio.h
 fatfs_sd\sd_diskio.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
 fatfs_sd\sd_diskio.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdio.h

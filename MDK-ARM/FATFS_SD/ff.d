@@ -1,7 +1,7 @@
 fatfs_sd\ff.o: ../Middlewares/Third_Party/FatFs/src/ff.c
 fatfs_sd\ff.o: ../Middlewares/Third_Party/FatFs/src/ff.h
 fatfs_sd\ff.o: ../Middlewares/Third_Party/FatFs/src/integer.h
-fatfs_sd\ff.o: ../FATFS/Target/ffconf.h
+fatfs_sd\ff.o: ..\Src\middle\fatfs\ffconf.h
 fatfs_sd\ff.o: ../Core/Inc/main.h
 fatfs_sd\ff.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 fatfs_sd\ff.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -39,7 +39,7 @@ fatfs_sd\ff.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 fatfs_sd\ff.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 fatfs_sd\ff.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 fatfs_sd\ff.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-fatfs_sd\ff.o: ../FATFS/Target/bsp_driver_sd.h
+fatfs_sd\ff.o: ..\Src\middle\fatfs\bsp_driver_sd.h
 fatfs_sd\ff.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 fatfs_sd\ff.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 fatfs_sd\ff.o: ../Core/Inc/FreeRTOSConfig.h

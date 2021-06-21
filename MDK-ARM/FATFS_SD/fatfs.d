@@ -1,8 +1,8 @@
-fatfs_sd\fatfs.o: ../FATFS/App/fatfs.c
-fatfs_sd\fatfs.o: ../FATFS/App/fatfs.h
+fatfs_sd\fatfs.o: ..\Src\middle\fatfs\fatfs.c
+fatfs_sd\fatfs.o: ..\Src\middle\fatfs\fatfs.h
 fatfs_sd\fatfs.o: ../Middlewares/Third_Party/FatFs/src/ff.h
 fatfs_sd\fatfs.o: ../Middlewares/Third_Party/FatFs/src/integer.h
-fatfs_sd\fatfs.o: ../FATFS/Target/ffconf.h
+fatfs_sd\fatfs.o: ..\Src\middle\fatfs\ffconf.h
 fatfs_sd\fatfs.o: ../Core/Inc/main.h
 fatfs_sd\fatfs.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 fatfs_sd\fatfs.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -40,7 +40,7 @@ fatfs_sd\fatfs.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 fatfs_sd\fatfs.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 fatfs_sd\fatfs.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 fatfs_sd\fatfs.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-fatfs_sd\fatfs.o: ../FATFS/Target/bsp_driver_sd.h
+fatfs_sd\fatfs.o: ..\Src\middle\fatfs\bsp_driver_sd.h
 fatfs_sd\fatfs.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 fatfs_sd\fatfs.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 fatfs_sd\fatfs.o: ../Core/Inc/FreeRTOSConfig.h
@@ -57,4 +57,14 @@ fatfs_sd\fatfs.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 fatfs_sd\fatfs.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 fatfs_sd\fatfs.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
 fatfs_sd\fatfs.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
-fatfs_sd\fatfs.o: ../FATFS/Target/sd_diskio.h
+fatfs_sd\fatfs.o: ..\Src\middle\fatfs\sd_diskio.h
+fatfs_sd\fatfs.o: ..\Src\drv\sys\SysCommDef.h
+fatfs_sd\fatfs.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
+fatfs_sd\fatfs.o: ..\Src\tools\log.h
+fatfs_sd\fatfs.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+fatfs_sd\fatfs.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+fatfs_sd\fatfs.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
+fatfs_sd\fatfs.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+fatfs_sd\fatfs.o: ..\Src\drv\sys\SysCommDef.h
+fatfs_sd\fatfs.o: ..\Src\drv\uart\usart.h
+fatfs_sd\fatfs.o: ..\Src\drv\sys\sys_data_type.h

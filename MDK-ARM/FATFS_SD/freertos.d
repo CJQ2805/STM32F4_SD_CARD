@@ -52,8 +52,12 @@ fatfs_sd\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 fatfs_sd\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 fatfs_sd\freertos.o: ..\Src\drv\sys\SysCommDef.h
 fatfs_sd\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
-fatfs_sd\freertos.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
+fatfs_sd\freertos.o: ..\Src\tools\log.h
 fatfs_sd\freertos.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+fatfs_sd\freertos.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+fatfs_sd\freertos.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
 fatfs_sd\freertos.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+fatfs_sd\freertos.o: ..\Src\drv\sys\SysCommDef.h
+fatfs_sd\freertos.o: ..\Src\drv\uart\usart.h
 fatfs_sd\freertos.o: ..\Src\drv\sys\sys_data_type.h
 fatfs_sd\freertos.o: ..\Src\module\tftlcd\tftlcd_opr.h

@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F429xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../FATFS/Target;../FATFS/App;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\Src\drv\tim;..\Src\drv\uart;..\Src\drv\sdio;..\Src\drv\sys;..\Src\drv\fmc;..\Src\module\tftlcd;..\Middlewares\Third_Party\FreeRTOS\Source;..\Src\tools</IncludePath>
+              <IncludePath>../Core/Inc;../FATFS/Target;../FATFS/App;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\Src\drv\tim;..\Src\drv\uart;..\Src\drv\sdio;..\Src\drv\sys;..\Src\drv\fmc;..\Src\module\tftlcd;..\Middlewares\Third_Party\FreeRTOS\Source;..\Src\tools;..\Src\middle\fatfs;..\Src\module\sd_card</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -421,31 +421,6 @@
               <FileName>osmonit.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Middlewares\Third_Party\FreeRTOS\Source\osmonit.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Application/User/FATFS/Target</GroupName>
-          <Files>
-            <File>
-              <FileName>bsp_driver_sd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../FATFS/Target/bsp_driver_sd.c</FilePath>
-            </File>
-            <File>
-              <FileName>sd_diskio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../FATFS/Target/sd_diskio.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Application/User/FATFS/App</GroupName>
-          <Files>
-            <File>
-              <FileName>fatfs.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../FATFS/App/fatfs.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -650,6 +625,61 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>tools</GroupName>
+          <Files>
+            <File>
+              <FileName>log.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\tools\log.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>middle/fatfs</GroupName>
+          <Files>
+            <File>
+              <FileName>bsp_driver_sd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\middle\fatfs\bsp_driver_sd.c</FilePath>
+            </File>
+            <File>
+              <FileName>fatfs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\middle\fatfs\fatfs.c</FilePath>
+            </File>
+            <File>
+              <FileName>sd_diskio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\middle\fatfs\sd_diskio.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>module/lcd</GroupName>
+          <Files>
+            <File>
+              <FileName>tftlcd_opr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\module\tftlcd\tftlcd_opr.c</FilePath>
+            </File>
+            <File>
+              <FileName>tftlcd_arg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\module\tftlcd\tftlcd_arg.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>module/sd_card</GroupName>
+          <Files>
+            <File>
+              <FileName>sd_card_opr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\module\sd_card\sd_card_opr.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>drv</GroupName>
           <Files>
             <File>
@@ -676,31 +706,6 @@
               <FileName>fmc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\drv\fmc\fmc.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>module/lcd</GroupName>
-          <Files>
-            <File>
-              <FileName>tftlcd_opr.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\module\tftlcd\tftlcd_opr.c</FilePath>
-            </File>
-            <File>
-              <FileName>tftlcd_arg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\module\tftlcd\tftlcd_arg.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>tools</GroupName>
-          <Files>
-            <File>
-              <FileName>log.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\tools\log.c</FilePath>
             </File>
           </Files>
         </Group>

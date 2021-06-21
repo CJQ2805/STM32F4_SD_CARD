@@ -55,5 +55,6 @@ fatfs_sd\log.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 fatfs_sd\log.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 fatfs_sd\log.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 fatfs_sd\log.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+fatfs_sd\log.o: ..\Src\tools\log.h
 fatfs_sd\log.o: ..\Src\drv\sys\sys_data_type.h
 fatfs_sd\log.o: ..\Src\drv\uart\usart.h

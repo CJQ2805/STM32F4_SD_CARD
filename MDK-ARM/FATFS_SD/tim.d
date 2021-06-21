@@ -51,7 +51,11 @@ fatfs_sd\tim.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 fatfs_sd\tim.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 fatfs_sd\tim.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 fatfs_sd\tim.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-fatfs_sd\tim.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
+fatfs_sd\tim.o: ..\Src\tools\log.h
 fatfs_sd\tim.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+fatfs_sd\tim.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+fatfs_sd\tim.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
 fatfs_sd\tim.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+fatfs_sd\tim.o: ..\Src\drv\sys\SysCommDef.h
+fatfs_sd\tim.o: ..\Src\drv\uart\usart.h
 fatfs_sd\tim.o: ..\Src\drv\sys\sys_data_type.h

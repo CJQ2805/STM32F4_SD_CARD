@@ -6,6 +6,7 @@
 
 #include "cmsis_os.h"
 #include "stm32f4xx_hal.h"
+#include  "log.h"
 #include <string.h>
 #include <stdio.h> 
 #include <stdarg.h> 

@@ -52,7 +52,11 @@ fatfs_sd\fmc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
 fatfs_sd\fmc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 fatfs_sd\fmc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 fatfs_sd\fmc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
-fatfs_sd\fmc.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
+fatfs_sd\fmc.o: ..\Src\tools\log.h
 fatfs_sd\fmc.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+fatfs_sd\fmc.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+fatfs_sd\fmc.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
 fatfs_sd\fmc.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+fatfs_sd\fmc.o: ..\Src\drv\sys\SysCommDef.h
+fatfs_sd\fmc.o: ..\Src\drv\uart\usart.h
 fatfs_sd\fmc.o: ..\Src\drv\sys\sys_data_type.h
