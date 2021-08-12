@@ -1,6 +1,7 @@
 
 #include <osmonit.h>
 #include <log.h>
+#include "key.h"
 
 IWDG_HandleTypeDef hiwdg;  
 
@@ -54,6 +55,8 @@ typedef struct _OSMonitArg_T {
     
     struct _task_info   ttask_info[20];
     u8      u8task_info_num;
+	char    acinfo_buff[1000];
+	
 }T_OSMonitArg , *PT_OSMonitArg;
 
 T_OSMonitArg g_tOSMonitArg;
@@ -529,6 +532,36 @@ void IgnorTaskInit(void)
     }
 
 }
+/**
+	@brief	查看任务运行时间， 使用了TIM3定时器，耗费极大系统资源
+	仅调试可开启使用
+*/
+
+#if OPEN_TASK_RUNTIME
+
+void get_task_run_time_stat(void)
+{
+	u8 u8key = 0;
+	
+	u8key = KEY_Scan(0);
+	if(u8key == WKUP_PRES)
+	{
+		vTaskGetRunTimeStats(g_tOSMonitArg.acinfo_buff);
+		printf("%s\r\n",g_tOSMonitArg.acinfo_buff);
+		osDelay(1);		
+	}	
+	
+}
+
+#elif
+
+__weak void get_task_run_time_stat(void)
+{
+
+
+}
+
+#endif
 
 void OSMonitTask(void const * argument)
 {
@@ -545,7 +578,9 @@ void OSMonitTask(void const * argument)
         RunFunction();
         SysRestart();
         updata_task_memory();
-		osDelay(OS_MONIT_TASK_DELAY_VAL);
+		get_task_run_time_stat();
+		//osDelay(OS_MONIT_TASK_DELAY_VAL);
+		oSMonitOsDelay(10);
 	}	
 }
 

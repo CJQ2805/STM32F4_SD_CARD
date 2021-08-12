@@ -6,6 +6,7 @@ fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeR
 fatfs_sd\sd_card_opr.o: E:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 fatfs_sd\sd_card_opr.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 fatfs_sd\sd_card_opr.o: ../Core/Inc/FreeRTOSConfig.h
+fatfs_sd\sd_card_opr.o: ..\Src\drv\tim\tim.h
 fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
@@ -59,6 +60,7 @@ fatfs_sd\sd_card_opr.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 fatfs_sd\sd_card_opr.o: ..\Src\drv\sys\SysCommDef.h
 fatfs_sd\sd_card_opr.o: ..\Src\drv\uart\usart.h
 fatfs_sd\sd_card_opr.o: ..\Src\drv\sys\sys_data_type.h
+fatfs_sd\sd_card_opr.o: ..\Middlewares\Third_Party\FreeRTOS\Source\osmonit.h
 fatfs_sd\sd_card_opr.o: ..\Src\middle\fatfs\fatfs.h
 fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FatFs/src/ff.h
 fatfs_sd\sd_card_opr.o: ../Middlewares/Third_Party/FatFs/src/integer.h

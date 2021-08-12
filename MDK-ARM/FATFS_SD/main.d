@@ -39,6 +39,7 @@ fatfs_sd\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 fatfs_sd\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 fatfs_sd\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 fatfs_sd\main.o: ../Core/Inc/FreeRTOSConfig.h
+fatfs_sd\main.o: ..\Src\drv\tim\tim.h
 fatfs_sd\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 fatfs_sd\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 fatfs_sd\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
@@ -60,7 +61,6 @@ fatfs_sd\main.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
 fatfs_sd\main.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
 fatfs_sd\main.o: ..\Src\middle\fatfs\sd_diskio.h
 fatfs_sd\main.o: ..\Src\drv\uart\usart.h
-fatfs_sd\main.o: ..\Src\drv\tim\tim.h
 fatfs_sd\main.o: ..\Src\drv\sdio\sdio.h
 fatfs_sd\main.o: ..\Src\drv\fmc\fmc.h
 fatfs_sd\main.o: ..\Src\drv\sys\SysCommDef.h
@@ -72,3 +72,4 @@ fatfs_sd\main.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
 fatfs_sd\main.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 fatfs_sd\main.o: ..\Src\drv\sys\SysCommDef.h
 fatfs_sd\main.o: ..\Src\drv\sys\sys_data_type.h
+fatfs_sd\main.o: ..\Src\tools\key\key.h

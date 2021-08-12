@@ -43,6 +43,7 @@ fatfs_sd\syscall.o: ..\Src\middle\fatfs\bsp_driver_sd.h
 fatfs_sd\syscall.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 fatfs_sd\syscall.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 fatfs_sd\syscall.o: ../Core/Inc/FreeRTOSConfig.h
+fatfs_sd\syscall.o: ..\Src\drv\tim\tim.h
 fatfs_sd\syscall.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 fatfs_sd\syscall.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 fatfs_sd\syscall.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h

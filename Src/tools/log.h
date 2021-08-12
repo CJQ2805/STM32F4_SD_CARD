@@ -12,6 +12,7 @@
 void LogTakeMutex(void);
 void LogGiveMutex(void);
 void Log_init();
+
 #define PRINGT_DEBUG 
 
 #ifdef PRINGT_DEBUG
@@ -32,6 +33,15 @@ void Log_init();
 
 
 #else
+#define logerr(format, argument...)     
+#define logwhite(format, argument...)
+#define loggreen(format, argument...)
+#define logyellow(format, argument...)   
+#define logred(format, argument...)
+#define logblue(format, argument...)  
+#define logn() 
+#define loxwhite(buf,len)  
+#define loxwhite10(buf,len) 
 
 #endif
 

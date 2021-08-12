@@ -26,6 +26,7 @@
 #include <sdio.h>
 #include <fmc.h>
 #include <SysCommDef.h>
+#include "key.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -90,20 +91,23 @@ int main(void)
 
   /* Configure the system clock */
   SystemClock_Config();
-
+  Log_init();
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   
-  Log_init();
+
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_SDIO_SD_Init();
   MX_USART1_UART_Init();
   MX_FATFS_Init();
   MX_FMC_Init();
+  KEY_Init();
+  LCD_Init();
+  LCD_ShowString(10,40,240,32,32,"Apollo STM32F4"); 
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

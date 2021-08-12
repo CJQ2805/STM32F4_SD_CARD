@@ -4,6 +4,7 @@ fatfs_sd\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/Free
 fatfs_sd\event_groups.o: E:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 fatfs_sd\event_groups.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 fatfs_sd\event_groups.o: ../Core/Inc/FreeRTOSConfig.h
+fatfs_sd\event_groups.o: ..\Src\drv\tim\tim.h
 fatfs_sd\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 fatfs_sd\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 fatfs_sd\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h

@@ -6,6 +6,7 @@ fatfs_sd\osmonit.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.
 fatfs_sd\osmonit.o: E:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 fatfs_sd\osmonit.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 fatfs_sd\osmonit.o: ../Core/Inc/FreeRTOSConfig.h
+fatfs_sd\osmonit.o: ..\Src\drv\tim\tim.h
 fatfs_sd\osmonit.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 fatfs_sd\osmonit.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 fatfs_sd\osmonit.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
@@ -59,3 +60,4 @@ fatfs_sd\osmonit.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 fatfs_sd\osmonit.o: ..\Src\drv\sys\SysCommDef.h
 fatfs_sd\osmonit.o: ..\Src\drv\uart\usart.h
 fatfs_sd\osmonit.o: ..\Src\drv\sys\sys_data_type.h
+fatfs_sd\osmonit.o: ..\Src\tools\key\key.h

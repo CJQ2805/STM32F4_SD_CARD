@@ -50,6 +50,7 @@
 /* Ensure definitions are only used by the compiler, and not by the assembler. */
 #if defined(__ICCARM__) || defined(__CC_ARM) || defined(__GNUC__)
   #include <stdint.h>
+  #include <tim.h> 
   extern uint32_t SystemCoreClock;
 #endif
 #define configENABLE_FPU                         0
@@ -72,6 +73,24 @@
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION  1
 #define configUSE_TRACE_FACILITY                 1 
 #define configUSE_QUEUE_SETS                     1
+#define configUSE_STATS_FORMATTING_FUNCTIONS     1      
+
+/* ----------------------- */
+//自定义功能宏定义
+/* ----------------------- */
+
+/**
+ @brief 功能：查看任务运行时间 
+  参考正点原子FreeRTOs教程 P18 任务运行时间统计实验
+*/
+#define configGENERATE_RUN_TIME_STATS            1   //任务运行时间统计 宏
+
+#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS()	 ConfigTimerForRunTimeStats()     
+#define portGET_RUN_TIME_COUNTER_VALUE()			 FreeRTOSRunTimeTicks
+/* ----------------------- */
+
+
+
 /* USER CODE BEGIN MESSAGE_BUFFER_LENGTH_TYPE */
 /* Defaults to size_t for backward compatibility, but can be changed
    if lengths will always be less than the number of bytes in a size_t. */
@@ -93,7 +112,7 @@ to exclude the API function. */
 #define INCLUDE_vTaskDelay                   1
 #define INCLUDE_xTaskGetSchedulerState       1
 
-#define INCLUDE_uxTaskGetStackHighWaterMark  1 //���ջ�ĸ�ˮλ
+#define INCLUDE_uxTaskGetStackHighWaterMark  1 //水位
 /* Cortex-M specific definitions. */
 #ifdef __NVIC_PRIO_BITS
  /* __BVIC_PRIO_BITS will be specified when CMSIS is being used. */

@@ -7,6 +7,7 @@
 
 //#define CLOSE_OS_MONIT
 
+#define OPEN_TASK_RUNTIME     1
 
 #define  HEAP_SIZE_MIN   (5*1024)
 #define  HEAP_SIZE_ERRO  (4*1024)

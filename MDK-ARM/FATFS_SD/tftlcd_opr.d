@@ -11,6 +11,7 @@ fatfs_sd\tftlcd_opr.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRT
 fatfs_sd\tftlcd_opr.o: E:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 fatfs_sd\tftlcd_opr.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 fatfs_sd\tftlcd_opr.o: ../Core/Inc/FreeRTOSConfig.h
+fatfs_sd\tftlcd_opr.o: ..\Src\drv\tim\tim.h
 fatfs_sd\tftlcd_opr.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 fatfs_sd\tftlcd_opr.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 fatfs_sd\tftlcd_opr.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
@@ -59,4 +60,5 @@ fatfs_sd\tftlcd_opr.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 fatfs_sd\tftlcd_opr.o: ..\Src\tools\log.h
 fatfs_sd\tftlcd_opr.o: ..\Src\drv\sys\sys_data_type.h
 fatfs_sd\tftlcd_opr.o: ..\Src\drv\uart\usart.h
+fatfs_sd\tftlcd_opr.o: ..\Middlewares\Third_Party\FreeRTOS\Source\osmonit.h
 fatfs_sd\tftlcd_opr.o: ..\Src\module\tftlcd\tftlcd_arg.h

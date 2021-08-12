@@ -1,23 +1,25 @@
 #include <tftlcd_opr.h>
 #include <log.h>
+#include <osmonit.h>
 #include <tftlcd_arg.h>
 #include <SysCommDef.h>
 
 
-
+char c[] = "TFTLCD TEST  CJQ";
 
 static void tftlcd_task(void const * argument)
 {
 	logblue("%s",(char*)argument);
 	logn();
-	LCD_Init();
+
 	POINT_COLOR=RED;
-	LCD_ShowString(10,80,240,24,24,"TFTLCD TEST");		
-	LCD_ShowString(10,40,240,32,32,"Apollo STM32F4/F7"); 		
+
+//	LCD_ShowString(10,80,400,32,32,c);		
+		
 	for(;;){ 
 		
 	
-		
+		oSMonitOsDelay(1);
 	}
 }
 

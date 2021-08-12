@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F429xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../FATFS/Target;../FATFS/App;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\Src\drv\tim;..\Src\drv\uart;..\Src\drv\sdio;..\Src\drv\sys;..\Src\drv\fmc;..\Src\module\tftlcd;..\Middlewares\Third_Party\FreeRTOS\Source;..\Src\tools;..\Src\middle\fatfs;..\Src\module\sd_card</IncludePath>
+              <IncludePath>../Core/Inc;../FATFS/Target;../FATFS/App;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\Src\drv\tim;..\Src\drv\uart;..\Src\drv\sdio;..\Src\drv\sys;..\Src\drv\fmc;..\Src\module\tftlcd;..\Middlewares\Third_Party\FreeRTOS\Source;..\Src\tools;..\Src\middle\fatfs;..\Src\module\sd_card;..\Src\tools\key</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -632,6 +632,11 @@
               <FileType>1</FileType>
               <FilePath>..\Src\tools\log.c</FilePath>
             </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\tools\key\key.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -676,6 +681,11 @@
               <FileName>sd_card_opr.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\module\sd_card\sd_card_opr.c</FilePath>
+            </File>
+            <File>
+              <FileName>sd_card_process.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\module\sd_card\sd_card_process.c</FilePath>
             </File>
           </Files>
         </Group>

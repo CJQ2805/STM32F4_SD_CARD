@@ -41,6 +41,7 @@ fatfs_sd\fmc.o: ..\Src\drv\sys\SysCommDef.h
 fatfs_sd\fmc.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 fatfs_sd\fmc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 fatfs_sd\fmc.o: ../Core/Inc/FreeRTOSConfig.h
+fatfs_sd\fmc.o: ..\Src\drv\tim\tim.h
 fatfs_sd\fmc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 fatfs_sd\fmc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 fatfs_sd\fmc.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
