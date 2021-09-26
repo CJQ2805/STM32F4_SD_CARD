@@ -37,15 +37,15 @@ void MX_FMC_Init(void)
   hsram1.Init.ContinuousClock = FMC_CONTINUOUS_CLOCK_SYNC_ONLY;
   hsram1.Init.PageSize = FMC_PAGE_SIZE_NONE;
   /* Timing */
-	FMC_ReadWriteTim.AddressSetupTime=0x0F;        //地址建立时间(ADDSET)为15个HCLK 1/180M*15=5.5ns*15=82.5ns
-	FMC_ReadWriteTim.AddressHoldTime=0x00;
-	FMC_ReadWriteTim.DataSetupTime=0x46;           //数据保存时间(DATAST)为70个HCLK	=5.5*70=385ns
-	FMC_ReadWriteTim.AccessMode=FMC_ACCESS_MODE_A; //模式A
+  FMC_ReadWriteTim.AddressSetupTime=0x0F;        //地址建立时间(ADDSET)为15个HCLK 1/180M*15=5.5ns*15=82.5ns
+  FMC_ReadWriteTim.AddressHoldTime=0x00;
+  FMC_ReadWriteTim.DataSetupTime=0x46;           //数据保存时间(DATAST)为70个HCLK	=5.5*70=385ns
+  FMC_ReadWriteTim.AccessMode=FMC_ACCESS_MODE_A; //模式A
 	//FMC写时序控制寄存器
-	FMC_WriteTim.AddressSetupTime=0x0F;            //地址建立时间(ADDSET)为15个HCLK=82.5ns
-	FMC_WriteTim.AddressHoldTime=0x00;
-	FMC_WriteTim.DataSetupTime=0x0F;               //数据保存时间(DATAST)为5.5ns*15个HCLK=82.5ns
-	FMC_WriteTim.AccessMode=FMC_ACCESS_MODE_A;     //模式A
+  FMC_WriteTim.AddressSetupTime=0x0F;            //地址建立时间(ADDSET)为15个HCLK=82.5ns
+  FMC_WriteTim.AddressHoldTime=0x00;
+  FMC_WriteTim.DataSetupTime=0x0F;               //数据保存时间(DATAST)为5.5ns*15个HCLK=82.5ns
+  FMC_WriteTim.AccessMode=FMC_ACCESS_MODE_A;     //模式A
 
   /* ExtTiming */
 

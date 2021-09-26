@@ -100,14 +100,15 @@ int main(void)
   
 
   MX_GPIO_Init();
+  MX_FMC_Init();
+  LCD_Init(); 
   MX_DMA_Init();
   MX_SDIO_SD_Init();
   MX_USART1_UART_Init();
   MX_FATFS_Init();
-  MX_FMC_Init();
+
   KEY_Init();
-  LCD_Init();
-  LCD_ShowString(10,40,240,32,32,"Apollo STM32F4"); 
+
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

@@ -578,7 +578,7 @@ void OSMonitTask(void const * argument)
         RunFunction();
         SysRestart();
         updata_task_memory();
-		get_task_run_time_stat();
+//		get_task_run_time_stat();
 		//osDelay(OS_MONIT_TASK_DELAY_VAL);
 		oSMonitOsDelay(10);
 	}	

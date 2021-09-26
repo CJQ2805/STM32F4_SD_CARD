@@ -1632,7 +1632,7 @@ void LCD_Init(void)
 		LCD_WriteReg(0x3500,0x00);
 		LCD_WriteReg(0x3A00,0x55);  //16-bit/pixel
 		LCD_WR_REG(0x1100);
-		delay_us(120);
+//		delay_us(120);
 		LCD_WR_REG(0x2900);  
 	}else if(lcddev.id==0X1963)
 	{
@@ -1640,7 +1640,7 @@ void LCD_Init(void)
 		LCD_WR_DATA(0x1D);		//参数1 
 		LCD_WR_DATA(0x02);		//参数2 Divider M = 2, PLL = 300/(M+1) = 100MHz
 		LCD_WR_DATA(0x04);		//参数3 Validate M and N values   
-		delay_us(100);
+//		delay_us(100);
 		LCD_WR_REG(0xE0);		// Start PLL command
 		LCD_WR_DATA(0x01);		// enable PLL
 //		delay_ms(10);
