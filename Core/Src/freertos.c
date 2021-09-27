@@ -83,7 +83,7 @@ void StartTask(void)
 	
     printf("\r\nrun start-!\r\n");
 	create_tftlcd_task();
-	create_sd_card_task();
+//	create_sd_card_task();
 }
 /* USER CODE END PM */
 

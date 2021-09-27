@@ -1,7 +1,8 @@
 #include <fmc.h>
 #include <SysCommDef.h>
 
-SRAM_HandleTypeDef hsram1;
+
+SRAM_HandleTypeDef SRAM_Handler;   
 
 /* FMC initialization function */
 void MX_FMC_Init(void)
@@ -12,47 +13,35 @@ void MX_FMC_Init(void)
   /* USER CODE END FMC_Init 0 */
 	FMC_NORSRAM_TimingTypeDef FMC_ReadWriteTim;
 	FMC_NORSRAM_TimingTypeDef FMC_WriteTim;
-  /* USER CODE BEGIN FMC_Init 1 */
-
-  /* USER CODE END FMC_Init 1 */
-
-  /** Perform the SRAM1 memory initialization sequence
-  */
-  hsram1.Instance = FMC_NORSRAM_DEVICE;
-  hsram1.Extended = FMC_NORSRAM_EXTENDED_DEVICE;
-  /* hsram1.Init */
-  hsram1.Init.NSBank = FMC_NORSRAM_BANK4;
-  hsram1.Init.DataAddressMux = FMC_DATA_ADDRESS_MUX_DISABLE;
-  hsram1.Init.MemoryType = FMC_MEMORY_TYPE_SRAM;
-  hsram1.Init.MemoryDataWidth = FMC_NORSRAM_MEM_BUS_WIDTH_16;
-  hsram1.Init.BurstAccessMode = FMC_BURST_ACCESS_MODE_DISABLE;
-  hsram1.Init.WaitSignalPolarity = FMC_WAIT_SIGNAL_POLARITY_LOW;
-  hsram1.Init.WrapMode = FMC_WRAP_MODE_DISABLE;
-  hsram1.Init.WaitSignalActive = FMC_WAIT_TIMING_BEFORE_WS;
-  hsram1.Init.WriteOperation = FMC_WRITE_OPERATION_ENABLE;
-  hsram1.Init.WaitSignal = FMC_WAIT_SIGNAL_DISABLE;
-  hsram1.Init.ExtendedMode = FMC_EXTENDED_MODE_DISABLE;
-  hsram1.Init.AsynchronousWait = FMC_ASYNCHRONOUS_WAIT_DISABLE;
-  hsram1.Init.WriteBurst = FMC_WRITE_BURST_DISABLE;
-  hsram1.Init.ContinuousClock = FMC_CONTINUOUS_CLOCK_SYNC_ONLY;
-  hsram1.Init.PageSize = FMC_PAGE_SIZE_NONE;
-  /* Timing */
-  FMC_ReadWriteTim.AddressSetupTime=0x0F;        //地址建立时间(ADDSET)为15个HCLK 1/180M*15=5.5ns*15=82.5ns
-  FMC_ReadWriteTim.AddressHoldTime=0x00;
-  FMC_ReadWriteTim.DataSetupTime=0x46;           //数据保存时间(DATAST)为70个HCLK	=5.5*70=385ns
-  FMC_ReadWriteTim.AccessMode=FMC_ACCESS_MODE_A; //模式A
+    
+	SRAM_Handler.Instance=FMC_NORSRAM_DEVICE;                
+	SRAM_Handler.Extended=FMC_NORSRAM_EXTENDED_DEVICE;    
+    
+	SRAM_Handler.Init.NSBank=FMC_NORSRAM_BANK1;     //使用NE1
+	SRAM_Handler.Init.DataAddressMux=FMC_DATA_ADDRESS_MUX_DISABLE; //地址/数据线不复用
+	SRAM_Handler.Init.MemoryType=FMC_MEMORY_TYPE_SRAM;   //SRAM
+	SRAM_Handler.Init.MemoryDataWidth=FMC_NORSRAM_MEM_BUS_WIDTH_16; //16位数据宽度
+	SRAM_Handler.Init.BurstAccessMode=FMC_BURST_ACCESS_MODE_DISABLE; //是否使能突发访问,仅对同步突发存储器有效,此处未用到
+	SRAM_Handler.Init.WaitSignalPolarity=FMC_WAIT_SIGNAL_POLARITY_LOW;//等待信号的极性,仅在突发模式访问下有用
+	SRAM_Handler.Init.WaitSignalActive=FMC_WAIT_TIMING_BEFORE_WS;   //存储器是在等待周期之前的一个时钟周期还是等待周期期间使能NWAIT
+	SRAM_Handler.Init.WriteOperation=FMC_WRITE_OPERATION_ENABLE;    //存储器写使能
+	SRAM_Handler.Init.WaitSignal=FMC_WAIT_SIGNAL_DISABLE;           //等待使能位,此处未用到
+	SRAM_Handler.Init.ExtendedMode=FMC_EXTENDED_MODE_ENABLE;        //读写使用不同的时序
+	SRAM_Handler.Init.AsynchronousWait=FMC_ASYNCHRONOUS_WAIT_DISABLE;//是否使能同步传输模式下的等待信号,此处未用到
+	SRAM_Handler.Init.WriteBurst=FMC_WRITE_BURST_DISABLE;           //禁止突发写
+	SRAM_Handler.Init.ContinuousClock=FMC_CONTINUOUS_CLOCK_SYNC_ASYNC;
+    SRAM_Handler.Init.WrapMode = FMC_WRAP_MODE_DISABLE;    
+	//FMC读时序控制寄存器
+	FMC_ReadWriteTim.AddressSetupTime=0x0F;        //地址建立时间(ADDSET)为15个HCLK 1/180M*15=5.5ns*15=82.5ns
+	FMC_ReadWriteTim.AddressHoldTime=0x00;
+	FMC_ReadWriteTim.DataSetupTime=0x46;           //数据保存时间(DATAST)为70个HCLK	=5.5*70=385ns
+	FMC_ReadWriteTim.AccessMode=FMC_ACCESS_MODE_A; //模式A
 	//FMC写时序控制寄存器
-  FMC_WriteTim.AddressSetupTime=0x0F;            //地址建立时间(ADDSET)为15个HCLK=82.5ns
-  FMC_WriteTim.AddressHoldTime=0x00;
-  FMC_WriteTim.DataSetupTime=0x0F;               //数据保存时间(DATAST)为5.5ns*15个HCLK=82.5ns
-  FMC_WriteTim.AccessMode=FMC_ACCESS_MODE_A;     //模式A
-
-  /* ExtTiming */
-
-  if (HAL_SRAM_Init(&hsram1, &FMC_ReadWriteTim, &FMC_WriteTim) != HAL_OK)
-  {
-    Error_Handler( );
-  }
+	FMC_WriteTim.AddressSetupTime=0x0F;            //地址建立时间(ADDSET)为15个HCLK=82.5ns
+	FMC_WriteTim.AddressHoldTime=0x00;
+	FMC_WriteTim.DataSetupTime=0x0F;               //数据保存时间(DATAST)为5.5ns*15个HCLK=82.5ns
+	FMC_WriteTim.AccessMode=FMC_ACCESS_MODE_A;     //模式A
+	HAL_SRAM_Init(&SRAM_Handler,&FMC_ReadWriteTim,&FMC_WriteTim);		
 
   /* USER CODE BEGIN FMC_Init 2 */
 

@@ -73,3 +73,5 @@ fatfs_sd\main.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
 fatfs_sd\main.o: ..\Src\drv\sys\SysCommDef.h
 fatfs_sd\main.o: ..\Src\drv\sys\sys_data_type.h
 fatfs_sd\main.o: ..\Src\tools\key\key.h
+fatfs_sd\main.o: ..\Src\module\tftlcd\tftlcd_opr.h
+fatfs_sd\main.o: ..\Src\module\tftlcd\tftlcd_arg.h

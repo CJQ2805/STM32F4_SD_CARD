@@ -27,6 +27,8 @@
 #include <fmc.h>
 #include <SysCommDef.h>
 #include "key.h"
+#include <tftlcd_opr.h>
+#include <tftlcd_arg.h>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -91,24 +93,22 @@ int main(void)
 
   /* Configure the system clock */
   SystemClock_Config();
-  Log_init();
+
   /* USER CODE BEGIN SysInit */
 
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  
-
-  MX_GPIO_Init();
+  MX_GPIO_Init();  
   MX_FMC_Init();
   LCD_Init(); 
+
   MX_DMA_Init();
   MX_SDIO_SD_Init();
   MX_USART1_UART_Init();
   MX_FATFS_Init();
-
   KEY_Init();
-
+  Log_init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
