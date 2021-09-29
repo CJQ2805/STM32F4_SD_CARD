@@ -3,7 +3,7 @@
 <title>Static Call Graph - [FATFS_SD\FATFS_SD.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image FATFS_SD\FATFS_SD.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sun Sep 26 18:02:19 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Sep 29 11:29:34 2021
 <BR><P>
 <H3>Maximum Stack Usage =       1880 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -11455,7 +11455,6 @@ Global Symbols
 <LI><a href="#[60c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
 <LI><a href="#[617]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[341]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eTaskGetState
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tftlcd_task
 </UL>
 
 <P><STRONG><a name="[343]"></a>vPortExitCritical</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, port.o(i.vPortExitCritical))
@@ -11472,7 +11471,6 @@ Global Symbols
 <LI><a href="#[60c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvIsQueueEmpty
 <LI><a href="#[617]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xTaskResumeAll
 <LI><a href="#[341]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eTaskGetState
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tftlcd_task
 </UL>
 
 <P><STRONG><a name="[122]"></a>vPortFree</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, heap_4.o(i.vPortFree))
@@ -12371,14 +12369,12 @@ Local Symbols
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SD_read
 </UL>
 
-<P><STRONG><a name="[f2]"></a>tftlcd_task</STRONG> (Thumb, 66 bytes, Stack size 0 bytes, tftlcd_opr.o(i.tftlcd_task))
+<P><STRONG><a name="[f2]"></a>tftlcd_task</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, tftlcd_opr.o(i.tftlcd_task))
 <BR><BR>[Stack]<UL><LI>Max Depth = 1296<LI>Call Chain = tftlcd_task &rArr; lv_demo_widgets &rArr; selectors_create &rArr; lv_list_create &rArr; lv_list_add_btn &rArr; lv_list_focus_btn &rArr; lv_obj_clear_state &rArr; lv_obj_set_state &rArr; style_snapshot &rArr; lv_obj_init_draw_rect_dsc &rArr; lv_obj_get_style_value_opa &rArr; _lv_obj_get_style_opa &rArr; update_style_cache &rArr; lv_obj_get_style_value_str &rArr; _lv_obj_get_style_ptr &rArr;  update_style_cache (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LogTakeMutex
 <LI><a href="#[185]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LogGiveMutex
 <LI><a href="#[19b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oSMonitOsDelay
-<LI><a href="#[343]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortExitCritical
-<LI><a href="#[342]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vPortEnterCritical
 <LI><a href="#[5b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_task_handler
 <LI><a href="#[57b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_port_disp_init
 <LI><a href="#[495]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_init

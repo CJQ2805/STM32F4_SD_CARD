@@ -8,6 +8,13 @@
 
 char c[] = "TFTLCD TEST  CJQ";
 
+#define PAGE_REG(name)\
+do{\
+	extern void PageRegiser_##name(u8 pageID);\
+	PageRegiser_##name(PAGE_##name);\
+}while(0)
+
+
 static void tftlcd_task(void const * argument)
 {
 	logblue("%s",(char*)argument);
@@ -20,9 +27,8 @@ static void tftlcd_task(void const * argument)
 	
 	for(;;){ 
 		
-		taskENTER_CRITICAL();		
+		
 		lv_task_handler();	
-		taskEXIT_CRITICAL();
 //		LCD_ShowString(10,80,400,32,32,c);	
 //		LCD_ShowString(10,110,400,32,32,c);	
 //		LCD_ShowString(10,130,400,32,32,c);	

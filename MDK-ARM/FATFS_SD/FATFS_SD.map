@@ -1608,9 +1608,7 @@ Section Cross References
     tftlcd_opr.o(i.tftlcd_task) refers to lv_obj.o(i.lv_init) for lv_init
     tftlcd_opr.o(i.tftlcd_task) refers to lv_port_disp.o(i.lv_port_disp_init) for lv_port_disp_init
     tftlcd_opr.o(i.tftlcd_task) refers to lv_demo_widgets.o(i.lv_demo_widgets) for lv_demo_widgets
-    tftlcd_opr.o(i.tftlcd_task) refers to port.o(i.vPortEnterCritical) for vPortEnterCritical
     tftlcd_opr.o(i.tftlcd_task) refers to lv_task.o(i.lv_task_handler) for lv_task_handler
-    tftlcd_opr.o(i.tftlcd_task) refers to port.o(i.vPortExitCritical) for vPortExitCritical
     tftlcd_opr.o(i.tftlcd_task) refers to osmonit.o(i.oSMonitOsDelay) for oSMonitOsDelay
     tftlcd_opr.o(.constdata) refers to tftlcd_opr.o(.conststring) for .conststring
     tftlcd_opr.o(.constdata) refers to tftlcd_opr.o(i.tftlcd_task) for tftlcd_task
@@ -14104,141 +14102,141 @@ Image Symbol Table
     i.textarea_init                          0x08039310   Section        0  lv_theme_material.o(i.textarea_init)
     textarea_init                            0x08039311   Thumb Code   264  lv_theme_material.o(i.textarea_init)
     i.tftlcd_task                            0x0803942c   Section        0  tftlcd_opr.o(i.tftlcd_task)
-    tftlcd_task                              0x0803942d   Thumb Code    66  tftlcd_opr.o(i.tftlcd_task)
-    i.theme_apply                            0x08039484   Section        0  lv_theme_material.o(i.theme_apply)
-    theme_apply                              0x08039485   Thumb Code  2186  lv_theme_material.o(i.theme_apply)
-    i.tileview_init                          0x08039d14   Section        0  lv_theme_material.o(i.tileview_init)
-    tileview_init                            0x08039d15   Thumb Code     2  lv_theme_material.o(i.tileview_init)
-    i.trans_anim_cb                          0x08039d16   Section        0  lv_obj.o(i.trans_anim_cb)
-    trans_anim_cb                            0x08039d17   Thumb Code   228  lv_obj.o(i.trans_anim_cb)
-    i.trans_anim_ready_cb                    0x08039dfc   Section        0  lv_obj.o(i.trans_anim_ready_cb)
-    trans_anim_ready_cb                      0x08039dfd   Thumb Code   112  lv_obj.o(i.trans_anim_ready_cb)
-    i.trans_anim_start_cb                    0x08039e70   Section        0  lv_obj.o(i.trans_anim_start_cb)
-    trans_anim_start_cb                      0x08039e71   Thumb Code   112  lv_obj.o(i.trans_anim_start_cb)
-    i.trans_create                           0x08039ee0   Section        0  lv_obj.o(i.trans_create)
-    trans_create                             0x08039ee1   Thumb Code   864  lv_obj.o(i.trans_create)
-    i.trans_del                              0x0803a254   Section        0  lv_obj.o(i.trans_del)
-    trans_del                                0x0803a255   Thumb Code   126  lv_obj.o(i.trans_del)
-    i.unicode_list_compare                   0x0803a2d8   Section        0  lv_font_fmt_txt.o(i.unicode_list_compare)
-    unicode_list_compare                     0x0803a2d9   Thumb Code    10  lv_font_fmt_txt.o(i.unicode_list_compare)
-    i.updata_task_memory                     0x0803a2e4   Section        0  osmonit.o(i.updata_task_memory)
-    i.update_cursor_position_on_click        0x0803a320   Section        0  lv_textarea.o(i.update_cursor_position_on_click)
-    update_cursor_position_on_click          0x0803a321   Thumb Code   210  lv_textarea.o(i.update_cursor_position_on_click)
-    i.update_style_cache                     0x0803a3f4   Section        0  lv_obj.o(i.update_style_cache)
-    update_style_cache                       0x0803a3f5   Thumb Code   760  lv_obj.o(i.update_style_cache)
-    i.update_style_cache_children            0x0803a6f0   Section        0  lv_obj.o(i.update_style_cache_children)
-    update_style_cache_children              0x0803a6f1   Thumb Code   242  lv_obj.o(i.update_style_cache_children)
-    i.uxListRemove                           0x0803a7e2   Section        0  list.o(i.uxListRemove)
-    i.uxTaskGetNumberOfTasks                 0x0803a80c   Section        0  tasks.o(i.uxTaskGetNumberOfTasks)
-    i.uxTaskGetStackHighWaterMark            0x0803a818   Section        0  tasks.o(i.uxTaskGetStackHighWaterMark)
-    i.uxTaskGetSystemState                   0x0803a840   Section        0  tasks.o(i.uxTaskGetSystemState)
-    i.uxTaskResetEventItemValue              0x0803a8f8   Section        0  tasks.o(i.uxTaskResetEventItemValue)
-    i.vApplicationGetIdleTaskMemory          0x0803a914   Section        0  freertos.o(i.vApplicationGetIdleTaskMemory)
-    i.vListInitialise                        0x0803a92c   Section        0  list.o(i.vListInitialise)
-    i.vListInitialiseItem                    0x0803a946   Section        0  list.o(i.vListInitialiseItem)
-    i.vListInsert                            0x0803a94c   Section        0  list.o(i.vListInsert)
-    i.vListInsertEnd                         0x0803a980   Section        0  list.o(i.vListInsertEnd)
-    i.vPortEnterCritical                     0x0803a998   Section        0  port.o(i.vPortEnterCritical)
-    i.vPortExitCritical                      0x0803a9ec   Section        0  port.o(i.vPortExitCritical)
-    i.vPortFree                              0x0803aa28   Section        0  heap_4.o(i.vPortFree)
-    i.vPortSetupTimerInterrupt               0x0803aabc   Section        0  port.o(i.vPortSetupTimerInterrupt)
-    i.vPortValidateInterruptPriority         0x0803aae4   Section        0  port.o(i.vPortValidateInterruptPriority)
-    i.vTaskDelay                             0x0803ab5c   Section        0  tasks.o(i.vTaskDelay)
-    i.vTaskGetInfo                           0x0803abb8   Section        0  tasks.o(i.vTaskGetInfo)
-    i.vTaskInternalSetTimeOutState           0x0803ac3c   Section        0  tasks.o(i.vTaskInternalSetTimeOutState)
-    i.vTaskMissedYield                       0x0803ac54   Section        0  tasks.o(i.vTaskMissedYield)
-    i.vTaskPlaceOnEventList                  0x0803ac60   Section        0  tasks.o(i.vTaskPlaceOnEventList)
-    i.vTaskPlaceOnUnorderedEventList         0x0803ac98   Section        0  tasks.o(i.vTaskPlaceOnUnorderedEventList)
-    i.vTaskPriorityDisinheritAfterTimeout    0x0803ad04   Section        0  tasks.o(i.vTaskPriorityDisinheritAfterTimeout)
-    i.vTaskRemoveFromUnorderedEventList      0x0803adf8   Section        0  tasks.o(i.vTaskRemoveFromUnorderedEventList)
-    i.vTaskStartScheduler                    0x0803ae9c   Section        0  tasks.o(i.vTaskStartScheduler)
-    i.vTaskSuspendAll                        0x0803af54   Section        0  tasks.o(i.vTaskSuspendAll)
-    i.vTaskSwitchContext                     0x0803af64   Section        0  tasks.o(i.vTaskSwitchContext)
-    i.value_update                           0x0803b030   Section        0  lv_arc.o(i.value_update)
-    value_update                             0x0803b031   Thumb Code   258  lv_arc.o(i.value_update)
-    i.visuals_create                         0x0803b134   Section        0  lv_demo_widgets.o(i.visuals_create)
-    visuals_create                           0x0803b135   Thumb Code  1934  lv_demo_widgets.o(i.visuals_create)
-    i.win_init                               0x0803b8ec   Section        0  lv_theme_material.o(i.win_init)
-    win_init                                 0x0803b8ed   Thumb Code     2  lv_theme_material.o(i.win_init)
-    i.xEventGroupCreate                      0x0803b8ee   Section        0  event_groups.o(i.xEventGroupCreate)
-    i.xEventGroupSetBits                     0x0803b90c   Section        0  event_groups.o(i.xEventGroupSetBits)
-    i.xEventGroupWaitBits                    0x0803b9dc   Section        0  event_groups.o(i.xEventGroupWaitBits)
-    i.xOSMonitTask                           0x0803bb34   Section        0  osmonit.o(i.xOSMonitTask)
-    i.xPortGetFreeHeapSize                   0x0803bb74   Section        0  heap_4.o(i.xPortGetFreeHeapSize)
-    i.xPortStartScheduler                    0x0803bb80   Section        0  port.o(i.xPortStartScheduler)
-    i.xQueueCreateMutex                      0x0803bce8   Section        0  queue.o(i.xQueueCreateMutex)
-    i.xQueueGenericCreate                    0x0803bd0a   Section        0  queue.o(i.xQueueGenericCreate)
-    i.xQueueGenericCreateStatic              0x0803bd6a   Section        0  queue.o(i.xQueueGenericCreateStatic)
-    i.xQueueGenericReset                     0x0803be4c   Section        0  queue.o(i.xQueueGenericReset)
-    i.xQueueGenericSend                      0x0803bee4   Section        0  queue.o(i.xQueueGenericSend)
-    i.xQueueGenericSendFromISR               0x0803c0bc   Section        0  queue.o(i.xQueueGenericSendFromISR)
-    i.xQueueReceive                          0x0803c1c4   Section        0  queue.o(i.xQueueReceive)
-    i.xQueueReceiveFromISR                   0x0803c32c   Section        0  queue.o(i.xQueueReceiveFromISR)
-    i.xQueueSemaphoreTake                    0x0803c3f8   Section        0  queue.o(i.xQueueSemaphoreTake)
-    i.xTaskCheckForTimeOut                   0x0803c5b0   Section        0  tasks.o(i.xTaskCheckForTimeOut)
-    i.xTaskCreate                            0x0803c63c   Section        0  tasks.o(i.xTaskCreate)
-    i.xTaskCreateStatic                      0x0803c6a0   Section        0  tasks.o(i.xTaskCreateStatic)
-    i.xTaskGetSchedulerState                 0x0803c75c   Section        0  tasks.o(i.xTaskGetSchedulerState)
-    i.xTaskGetTickCount                      0x0803c77c   Section        0  tasks.o(i.xTaskGetTickCount)
-    i.xTaskGetTickCountFromISR               0x0803c788   Section        0  tasks.o(i.xTaskGetTickCountFromISR)
-    i.xTaskIncrementTick                     0x0803c79c   Section        0  tasks.o(i.xTaskIncrementTick)
-    i.xTaskPriorityDisinherit                0x0803c8e4   Section        0  tasks.o(i.xTaskPriorityDisinherit)
-    i.xTaskPriorityInherit                   0x0803c9ac   Section        0  tasks.o(i.xTaskPriorityInherit)
-    i.xTaskRemoveFromEventList               0x0803ca74   Section        0  tasks.o(i.xTaskRemoveFromEventList)
-    i.xTaskResumeAll                         0x0803cb0c   Section        0  tasks.o(i.xTaskResumeAll)
-    .constdata                               0x0803cc10   Section       28  main.o(.constdata)
-    .constdata                               0x0803cc2c   Section       40  osmonit.o(.constdata)
-    __FUNCTION__                             0x0803cc2c   Data          11  osmonit.o(.constdata)
-    .constdata                               0x0803cc54   Section        8  stm32f4xx_hal_dma.o(.constdata)
-    flagBitshiftOffset                       0x0803cc54   Data           8  stm32f4xx_hal_dma.o(.constdata)
-    .constdata                               0x0803cc5c   Section       24  system_stm32f4xx.o(.constdata)
-    .constdata                               0x0803cc74   Section        9  log.o(.constdata)
-    __FUNCTION__                             0x0803cc74   Data           9  log.o(.constdata)
-    .constdata                               0x0803cc80   Section       36  sd_diskio.o(.constdata)
-    .constdata                               0x0803cca4   Section       28  tftlcd_opr.o(.constdata)
-    .constdata                               0x0803ccc0   Section       13  tim.o(.constdata)
-    __FUNCTION__                             0x0803ccc0   Data          13  tim.o(.constdata)
-    .constdata                               0x0803ccd0   Section       94  lv_demo_widgets.o(.constdata)
-    .constdata                               0x0803cd30   Section        2  lv_obj.o(.constdata)
-    .constdata                               0x0803cd34   Section       10  lv_draw_img.o(.constdata)
-    .constdata                               0x0803cd40   Section      290  lv_draw_label.o(.constdata)
-    .constdata                               0x0803ce62   Section       33  lv_draw_line.o(.constdata)
-    wcorr                                    0x0803ce62   Data          33  lv_draw_line.o(.constdata)
-    .constdata                               0x0803ce84   Section        2  lv_draw_rect.o(.constdata)
-    .constdata                               0x0803ce88   Section    13320  lv_font_montserrat_14.o(.constdata)
-    gylph_bitmap                             0x0803ce88   Data        8602  lv_font_montserrat_14.o(.constdata)
-    glyph_dsc                                0x0803f024   Data        1240  lv_font_montserrat_14.o(.constdata)
-    unicode_list_1                           0x0803f4fc   Data         118  lv_font_montserrat_14.o(.constdata)
-    cmaps                                    0x0803f574   Data          40  lv_font_montserrat_14.o(.constdata)
-    kern_left_class_mapping                  0x0803f59c   Data         155  lv_font_montserrat_14.o(.constdata)
-    kern_right_class_mapping                 0x0803f637   Data         155  lv_font_montserrat_14.o(.constdata)
-    kern_class_values                        0x0803f6d2   Data        2989  lv_font_montserrat_14.o(.constdata)
-    kern_classes                             0x08040280   Data          16  lv_font_montserrat_14.o(.constdata)
-    .constdata                               0x08040290   Section        6  lv_hal_disp.o(.constdata)
-    .constdata                               0x08040298   Section        8  lv_anim.o(.constdata)
-    .constdata                               0x080402a0   Section        2  lv_color.o(.constdata)
-    .constdata                               0x080402a2   Section       17  lv_debug.o(.constdata)
-    hex                                      0x080402a2   Data          17  lv_debug.o(.constdata)
-    .constdata                               0x080402b4   Section      182  lv_math.o(.constdata)
-    sin0_90_table                            0x080402b4   Data         182  lv_math.o(.constdata)
-    .constdata                               0x0804036c   Section       70  lv_theme_material.o(.constdata)
-    .constdata                               0x080403b4   Section      886  lv_keyboard.o(.constdata)
-    default_kb_map_lc                        0x080403b4   Data         176  lv_keyboard.o(.constdata)
-    default_kb_ctrl_lc_map                   0x08040464   Data          80  lv_keyboard.o(.constdata)
-    default_kb_map_uc                        0x080404b4   Data         176  lv_keyboard.o(.constdata)
-    default_kb_ctrl_uc_map                   0x08040564   Data          80  lv_keyboard.o(.constdata)
-    default_kb_map_spec                      0x080405b4   Data         176  lv_keyboard.o(.constdata)
-    default_kb_ctrl_spec_map                 0x08040664   Data          80  lv_keyboard.o(.constdata)
-    default_kb_map_num                       0x080406b4   Data          84  lv_keyboard.o(.constdata)
-    default_kb_ctrl_num_map                  0x08040708   Data          34  lv_keyboard.o(.constdata)
-    .conststring                             0x0804072c   Section       12  main.o(.conststring)
-    .conststring                             0x08040738   Section       48  osmonit.o(.conststring)
-    .conststring                             0x08040768   Section        4  tftlcd_opr.o(.conststring)
-    .conststring                             0x0804076c   Section      353  lv_demo_widgets.o(.conststring)
-    .conststring                             0x080408d0   Section       81  lv_mem.o(.conststring)
-    .conststring                             0x08040924   Section       41  lv_btnmatrix.o(.conststring)
-    .conststring                             0x08040950   Section      133  lv_calendar.o(.conststring)
-    .conststring                             0x080409d8   Section      376  lv_keyboard.o(.conststring)
+    tftlcd_task                              0x0803942d   Thumb Code    58  tftlcd_opr.o(i.tftlcd_task)
+    i.theme_apply                            0x0803947c   Section        0  lv_theme_material.o(i.theme_apply)
+    theme_apply                              0x0803947d   Thumb Code  2186  lv_theme_material.o(i.theme_apply)
+    i.tileview_init                          0x08039d0c   Section        0  lv_theme_material.o(i.tileview_init)
+    tileview_init                            0x08039d0d   Thumb Code     2  lv_theme_material.o(i.tileview_init)
+    i.trans_anim_cb                          0x08039d0e   Section        0  lv_obj.o(i.trans_anim_cb)
+    trans_anim_cb                            0x08039d0f   Thumb Code   228  lv_obj.o(i.trans_anim_cb)
+    i.trans_anim_ready_cb                    0x08039df4   Section        0  lv_obj.o(i.trans_anim_ready_cb)
+    trans_anim_ready_cb                      0x08039df5   Thumb Code   112  lv_obj.o(i.trans_anim_ready_cb)
+    i.trans_anim_start_cb                    0x08039e68   Section        0  lv_obj.o(i.trans_anim_start_cb)
+    trans_anim_start_cb                      0x08039e69   Thumb Code   112  lv_obj.o(i.trans_anim_start_cb)
+    i.trans_create                           0x08039ed8   Section        0  lv_obj.o(i.trans_create)
+    trans_create                             0x08039ed9   Thumb Code   864  lv_obj.o(i.trans_create)
+    i.trans_del                              0x0803a24c   Section        0  lv_obj.o(i.trans_del)
+    trans_del                                0x0803a24d   Thumb Code   126  lv_obj.o(i.trans_del)
+    i.unicode_list_compare                   0x0803a2d0   Section        0  lv_font_fmt_txt.o(i.unicode_list_compare)
+    unicode_list_compare                     0x0803a2d1   Thumb Code    10  lv_font_fmt_txt.o(i.unicode_list_compare)
+    i.updata_task_memory                     0x0803a2dc   Section        0  osmonit.o(i.updata_task_memory)
+    i.update_cursor_position_on_click        0x0803a318   Section        0  lv_textarea.o(i.update_cursor_position_on_click)
+    update_cursor_position_on_click          0x0803a319   Thumb Code   210  lv_textarea.o(i.update_cursor_position_on_click)
+    i.update_style_cache                     0x0803a3ec   Section        0  lv_obj.o(i.update_style_cache)
+    update_style_cache                       0x0803a3ed   Thumb Code   760  lv_obj.o(i.update_style_cache)
+    i.update_style_cache_children            0x0803a6e8   Section        0  lv_obj.o(i.update_style_cache_children)
+    update_style_cache_children              0x0803a6e9   Thumb Code   242  lv_obj.o(i.update_style_cache_children)
+    i.uxListRemove                           0x0803a7da   Section        0  list.o(i.uxListRemove)
+    i.uxTaskGetNumberOfTasks                 0x0803a804   Section        0  tasks.o(i.uxTaskGetNumberOfTasks)
+    i.uxTaskGetStackHighWaterMark            0x0803a810   Section        0  tasks.o(i.uxTaskGetStackHighWaterMark)
+    i.uxTaskGetSystemState                   0x0803a838   Section        0  tasks.o(i.uxTaskGetSystemState)
+    i.uxTaskResetEventItemValue              0x0803a8f0   Section        0  tasks.o(i.uxTaskResetEventItemValue)
+    i.vApplicationGetIdleTaskMemory          0x0803a90c   Section        0  freertos.o(i.vApplicationGetIdleTaskMemory)
+    i.vListInitialise                        0x0803a924   Section        0  list.o(i.vListInitialise)
+    i.vListInitialiseItem                    0x0803a93e   Section        0  list.o(i.vListInitialiseItem)
+    i.vListInsert                            0x0803a944   Section        0  list.o(i.vListInsert)
+    i.vListInsertEnd                         0x0803a978   Section        0  list.o(i.vListInsertEnd)
+    i.vPortEnterCritical                     0x0803a990   Section        0  port.o(i.vPortEnterCritical)
+    i.vPortExitCritical                      0x0803a9e4   Section        0  port.o(i.vPortExitCritical)
+    i.vPortFree                              0x0803aa20   Section        0  heap_4.o(i.vPortFree)
+    i.vPortSetupTimerInterrupt               0x0803aab4   Section        0  port.o(i.vPortSetupTimerInterrupt)
+    i.vPortValidateInterruptPriority         0x0803aadc   Section        0  port.o(i.vPortValidateInterruptPriority)
+    i.vTaskDelay                             0x0803ab54   Section        0  tasks.o(i.vTaskDelay)
+    i.vTaskGetInfo                           0x0803abb0   Section        0  tasks.o(i.vTaskGetInfo)
+    i.vTaskInternalSetTimeOutState           0x0803ac34   Section        0  tasks.o(i.vTaskInternalSetTimeOutState)
+    i.vTaskMissedYield                       0x0803ac4c   Section        0  tasks.o(i.vTaskMissedYield)
+    i.vTaskPlaceOnEventList                  0x0803ac58   Section        0  tasks.o(i.vTaskPlaceOnEventList)
+    i.vTaskPlaceOnUnorderedEventList         0x0803ac90   Section        0  tasks.o(i.vTaskPlaceOnUnorderedEventList)
+    i.vTaskPriorityDisinheritAfterTimeout    0x0803acfc   Section        0  tasks.o(i.vTaskPriorityDisinheritAfterTimeout)
+    i.vTaskRemoveFromUnorderedEventList      0x0803adf0   Section        0  tasks.o(i.vTaskRemoveFromUnorderedEventList)
+    i.vTaskStartScheduler                    0x0803ae94   Section        0  tasks.o(i.vTaskStartScheduler)
+    i.vTaskSuspendAll                        0x0803af4c   Section        0  tasks.o(i.vTaskSuspendAll)
+    i.vTaskSwitchContext                     0x0803af5c   Section        0  tasks.o(i.vTaskSwitchContext)
+    i.value_update                           0x0803b028   Section        0  lv_arc.o(i.value_update)
+    value_update                             0x0803b029   Thumb Code   258  lv_arc.o(i.value_update)
+    i.visuals_create                         0x0803b12c   Section        0  lv_demo_widgets.o(i.visuals_create)
+    visuals_create                           0x0803b12d   Thumb Code  1934  lv_demo_widgets.o(i.visuals_create)
+    i.win_init                               0x0803b8e4   Section        0  lv_theme_material.o(i.win_init)
+    win_init                                 0x0803b8e5   Thumb Code     2  lv_theme_material.o(i.win_init)
+    i.xEventGroupCreate                      0x0803b8e6   Section        0  event_groups.o(i.xEventGroupCreate)
+    i.xEventGroupSetBits                     0x0803b904   Section        0  event_groups.o(i.xEventGroupSetBits)
+    i.xEventGroupWaitBits                    0x0803b9d4   Section        0  event_groups.o(i.xEventGroupWaitBits)
+    i.xOSMonitTask                           0x0803bb2c   Section        0  osmonit.o(i.xOSMonitTask)
+    i.xPortGetFreeHeapSize                   0x0803bb6c   Section        0  heap_4.o(i.xPortGetFreeHeapSize)
+    i.xPortStartScheduler                    0x0803bb78   Section        0  port.o(i.xPortStartScheduler)
+    i.xQueueCreateMutex                      0x0803bce0   Section        0  queue.o(i.xQueueCreateMutex)
+    i.xQueueGenericCreate                    0x0803bd02   Section        0  queue.o(i.xQueueGenericCreate)
+    i.xQueueGenericCreateStatic              0x0803bd62   Section        0  queue.o(i.xQueueGenericCreateStatic)
+    i.xQueueGenericReset                     0x0803be44   Section        0  queue.o(i.xQueueGenericReset)
+    i.xQueueGenericSend                      0x0803bedc   Section        0  queue.o(i.xQueueGenericSend)
+    i.xQueueGenericSendFromISR               0x0803c0b4   Section        0  queue.o(i.xQueueGenericSendFromISR)
+    i.xQueueReceive                          0x0803c1bc   Section        0  queue.o(i.xQueueReceive)
+    i.xQueueReceiveFromISR                   0x0803c324   Section        0  queue.o(i.xQueueReceiveFromISR)
+    i.xQueueSemaphoreTake                    0x0803c3f0   Section        0  queue.o(i.xQueueSemaphoreTake)
+    i.xTaskCheckForTimeOut                   0x0803c5a8   Section        0  tasks.o(i.xTaskCheckForTimeOut)
+    i.xTaskCreate                            0x0803c634   Section        0  tasks.o(i.xTaskCreate)
+    i.xTaskCreateStatic                      0x0803c698   Section        0  tasks.o(i.xTaskCreateStatic)
+    i.xTaskGetSchedulerState                 0x0803c754   Section        0  tasks.o(i.xTaskGetSchedulerState)
+    i.xTaskGetTickCount                      0x0803c774   Section        0  tasks.o(i.xTaskGetTickCount)
+    i.xTaskGetTickCountFromISR               0x0803c780   Section        0  tasks.o(i.xTaskGetTickCountFromISR)
+    i.xTaskIncrementTick                     0x0803c794   Section        0  tasks.o(i.xTaskIncrementTick)
+    i.xTaskPriorityDisinherit                0x0803c8dc   Section        0  tasks.o(i.xTaskPriorityDisinherit)
+    i.xTaskPriorityInherit                   0x0803c9a4   Section        0  tasks.o(i.xTaskPriorityInherit)
+    i.xTaskRemoveFromEventList               0x0803ca6c   Section        0  tasks.o(i.xTaskRemoveFromEventList)
+    i.xTaskResumeAll                         0x0803cb04   Section        0  tasks.o(i.xTaskResumeAll)
+    .constdata                               0x0803cc08   Section       28  main.o(.constdata)
+    .constdata                               0x0803cc24   Section       40  osmonit.o(.constdata)
+    __FUNCTION__                             0x0803cc24   Data          11  osmonit.o(.constdata)
+    .constdata                               0x0803cc4c   Section        8  stm32f4xx_hal_dma.o(.constdata)
+    flagBitshiftOffset                       0x0803cc4c   Data           8  stm32f4xx_hal_dma.o(.constdata)
+    .constdata                               0x0803cc54   Section       24  system_stm32f4xx.o(.constdata)
+    .constdata                               0x0803cc6c   Section        9  log.o(.constdata)
+    __FUNCTION__                             0x0803cc6c   Data           9  log.o(.constdata)
+    .constdata                               0x0803cc78   Section       36  sd_diskio.o(.constdata)
+    .constdata                               0x0803cc9c   Section       28  tftlcd_opr.o(.constdata)
+    .constdata                               0x0803ccb8   Section       13  tim.o(.constdata)
+    __FUNCTION__                             0x0803ccb8   Data          13  tim.o(.constdata)
+    .constdata                               0x0803ccc8   Section       94  lv_demo_widgets.o(.constdata)
+    .constdata                               0x0803cd28   Section        2  lv_obj.o(.constdata)
+    .constdata                               0x0803cd2c   Section       10  lv_draw_img.o(.constdata)
+    .constdata                               0x0803cd38   Section      290  lv_draw_label.o(.constdata)
+    .constdata                               0x0803ce5a   Section       33  lv_draw_line.o(.constdata)
+    wcorr                                    0x0803ce5a   Data          33  lv_draw_line.o(.constdata)
+    .constdata                               0x0803ce7c   Section        2  lv_draw_rect.o(.constdata)
+    .constdata                               0x0803ce80   Section    13320  lv_font_montserrat_14.o(.constdata)
+    gylph_bitmap                             0x0803ce80   Data        8602  lv_font_montserrat_14.o(.constdata)
+    glyph_dsc                                0x0803f01c   Data        1240  lv_font_montserrat_14.o(.constdata)
+    unicode_list_1                           0x0803f4f4   Data         118  lv_font_montserrat_14.o(.constdata)
+    cmaps                                    0x0803f56c   Data          40  lv_font_montserrat_14.o(.constdata)
+    kern_left_class_mapping                  0x0803f594   Data         155  lv_font_montserrat_14.o(.constdata)
+    kern_right_class_mapping                 0x0803f62f   Data         155  lv_font_montserrat_14.o(.constdata)
+    kern_class_values                        0x0803f6ca   Data        2989  lv_font_montserrat_14.o(.constdata)
+    kern_classes                             0x08040278   Data          16  lv_font_montserrat_14.o(.constdata)
+    .constdata                               0x08040288   Section        6  lv_hal_disp.o(.constdata)
+    .constdata                               0x08040290   Section        8  lv_anim.o(.constdata)
+    .constdata                               0x08040298   Section        2  lv_color.o(.constdata)
+    .constdata                               0x0804029a   Section       17  lv_debug.o(.constdata)
+    hex                                      0x0804029a   Data          17  lv_debug.o(.constdata)
+    .constdata                               0x080402ac   Section      182  lv_math.o(.constdata)
+    sin0_90_table                            0x080402ac   Data         182  lv_math.o(.constdata)
+    .constdata                               0x08040364   Section       70  lv_theme_material.o(.constdata)
+    .constdata                               0x080403ac   Section      886  lv_keyboard.o(.constdata)
+    default_kb_map_lc                        0x080403ac   Data         176  lv_keyboard.o(.constdata)
+    default_kb_ctrl_lc_map                   0x0804045c   Data          80  lv_keyboard.o(.constdata)
+    default_kb_map_uc                        0x080404ac   Data         176  lv_keyboard.o(.constdata)
+    default_kb_ctrl_uc_map                   0x0804055c   Data          80  lv_keyboard.o(.constdata)
+    default_kb_map_spec                      0x080405ac   Data         176  lv_keyboard.o(.constdata)
+    default_kb_ctrl_spec_map                 0x0804065c   Data          80  lv_keyboard.o(.constdata)
+    default_kb_map_num                       0x080406ac   Data          84  lv_keyboard.o(.constdata)
+    default_kb_ctrl_num_map                  0x08040700   Data          34  lv_keyboard.o(.constdata)
+    .conststring                             0x08040724   Section       12  main.o(.conststring)
+    .conststring                             0x08040730   Section       48  osmonit.o(.conststring)
+    .conststring                             0x08040760   Section        4  tftlcd_opr.o(.conststring)
+    .conststring                             0x08040764   Section      353  lv_demo_widgets.o(.conststring)
+    .conststring                             0x080408c8   Section       81  lv_mem.o(.conststring)
+    .conststring                             0x0804091c   Section       41  lv_btnmatrix.o(.conststring)
+    .conststring                             0x08040948   Section      133  lv_calendar.o(.conststring)
+    .conststring                             0x080409d0   Section      376  lv_keyboard.o(.conststring)
     .data                                    0x10000000   Section        9  stm32f4xx_hal.o(.data)
     .data                                    0x1000000c   Section        4  system_stm32f4xx.o(.data)
     .data                                    0x10000010   Section       68  tasks.o(.data)
@@ -15346,70 +15344,70 @@ Image Symbol Table
     pvPortMalloc                             0x08035d59   Thumb Code   296  heap_4.o(i.pvPortMalloc)
     pvTaskIncrementMutexHeldCount            0x08035e95   Thumb Code    26  tasks.o(i.pvTaskIncrementMutexHeldCount)
     pxPortInitialiseStack                    0x08035f81   Thumb Code    38  port.o(i.pxPortInitialiseStack)
-    updata_task_memory                       0x0803a2e5   Thumb Code    50  osmonit.o(i.updata_task_memory)
-    uxListRemove                             0x0803a7e3   Thumb Code    40  list.o(i.uxListRemove)
-    uxTaskGetNumberOfTasks                   0x0803a80d   Thumb Code     6  tasks.o(i.uxTaskGetNumberOfTasks)
-    uxTaskGetStackHighWaterMark              0x0803a819   Thumb Code    34  tasks.o(i.uxTaskGetStackHighWaterMark)
-    uxTaskGetSystemState                     0x0803a841   Thumb Code   156  tasks.o(i.uxTaskGetSystemState)
-    uxTaskResetEventItemValue                0x0803a8f9   Thumb Code    24  tasks.o(i.uxTaskResetEventItemValue)
-    vApplicationGetIdleTaskMemory            0x0803a915   Thumb Code    16  freertos.o(i.vApplicationGetIdleTaskMemory)
-    vListInitialise                          0x0803a92d   Thumb Code    26  list.o(i.vListInitialise)
-    vListInitialiseItem                      0x0803a947   Thumb Code     6  list.o(i.vListInitialiseItem)
-    vListInsert                              0x0803a94d   Thumb Code    52  list.o(i.vListInsert)
-    vListInsertEnd                           0x0803a981   Thumb Code    24  list.o(i.vListInsertEnd)
-    vPortEnterCritical                       0x0803a999   Thumb Code    76  port.o(i.vPortEnterCritical)
-    vPortExitCritical                        0x0803a9ed   Thumb Code    56  port.o(i.vPortExitCritical)
-    vPortFree                                0x0803aa29   Thumb Code   140  heap_4.o(i.vPortFree)
-    vPortSetupTimerInterrupt                 0x0803aabd   Thumb Code    36  port.o(i.vPortSetupTimerInterrupt)
-    vPortValidateInterruptPriority           0x0803aae5   Thumb Code   106  port.o(i.vPortValidateInterruptPriority)
-    vTaskDelay                               0x0803ab5d   Thumb Code    82  tasks.o(i.vTaskDelay)
-    vTaskGetInfo                             0x0803abb9   Thumb Code   126  tasks.o(i.vTaskGetInfo)
-    vTaskInternalSetTimeOutState             0x0803ac3d   Thumb Code    14  tasks.o(i.vTaskInternalSetTimeOutState)
-    vTaskMissedYield                         0x0803ac55   Thumb Code     8  tasks.o(i.vTaskMissedYield)
-    vTaskPlaceOnEventList                    0x0803ac61   Thumb Code    52  tasks.o(i.vTaskPlaceOnEventList)
-    vTaskPlaceOnUnorderedEventList           0x0803ac99   Thumb Code   100  tasks.o(i.vTaskPlaceOnUnorderedEventList)
-    vTaskPriorityDisinheritAfterTimeout      0x0803ad05   Thumb Code   230  tasks.o(i.vTaskPriorityDisinheritAfterTimeout)
-    vTaskRemoveFromUnorderedEventList        0x0803adf9   Thumb Code   142  tasks.o(i.vTaskRemoveFromUnorderedEventList)
-    vTaskStartScheduler                      0x0803ae9d   Thumb Code   154  tasks.o(i.vTaskStartScheduler)
-    vTaskSuspendAll                          0x0803af55   Thumb Code    12  tasks.o(i.vTaskSuspendAll)
-    vTaskSwitchContext                       0x0803af65   Thumb Code   172  tasks.o(i.vTaskSwitchContext)
-    xEventGroupCreate                        0x0803b8ef   Thumb Code    30  event_groups.o(i.xEventGroupCreate)
-    xEventGroupSetBits                       0x0803b90d   Thumb Code   206  event_groups.o(i.xEventGroupSetBits)
-    xEventGroupWaitBits                      0x0803b9dd   Thumb Code   338  event_groups.o(i.xEventGroupWaitBits)
-    xOSMonitTask                             0x0803bb35   Thumb Code    40  osmonit.o(i.xOSMonitTask)
-    xPortGetFreeHeapSize                     0x0803bb75   Thumb Code     6  heap_4.o(i.xPortGetFreeHeapSize)
-    xPortStartScheduler                      0x0803bb81   Thumb Code   330  port.o(i.xPortStartScheduler)
-    xQueueCreateMutex                        0x0803bce9   Thumb Code    34  queue.o(i.xQueueCreateMutex)
-    xQueueGenericCreate                      0x0803bd0b   Thumb Code    96  queue.o(i.xQueueGenericCreate)
-    xQueueGenericCreateStatic                0x0803bd6b   Thumb Code   224  queue.o(i.xQueueGenericCreateStatic)
-    xQueueGenericReset                       0x0803be4d   Thumb Code   146  queue.o(i.xQueueGenericReset)
-    xQueueGenericSend                        0x0803bee5   Thumb Code   468  queue.o(i.xQueueGenericSend)
-    xQueueGenericSendFromISR                 0x0803c0bd   Thumb Code   264  queue.o(i.xQueueGenericSendFromISR)
-    xQueueReceive                            0x0803c1c5   Thumb Code   356  queue.o(i.xQueueReceive)
-    xQueueReceiveFromISR                     0x0803c32d   Thumb Code   202  queue.o(i.xQueueReceiveFromISR)
-    xQueueSemaphoreTake                      0x0803c3f9   Thumb Code   434  queue.o(i.xQueueSemaphoreTake)
-    xTaskCheckForTimeOut                     0x0803c5b1   Thumb Code   132  tasks.o(i.xTaskCheckForTimeOut)
-    xTaskCreate                              0x0803c63d   Thumb Code   100  tasks.o(i.xTaskCreate)
-    xTaskCreateStatic                        0x0803c6a1   Thumb Code   186  tasks.o(i.xTaskCreateStatic)
-    xTaskGetSchedulerState                   0x0803c75d   Thumb Code    24  tasks.o(i.xTaskGetSchedulerState)
-    xTaskGetTickCount                        0x0803c77d   Thumb Code     6  tasks.o(i.xTaskGetTickCount)
-    xTaskGetTickCountFromISR                 0x0803c789   Thumb Code    16  tasks.o(i.xTaskGetTickCountFromISR)
-    xTaskIncrementTick                       0x0803c79d   Thumb Code   282  tasks.o(i.xTaskIncrementTick)
-    xTaskPriorityDisinherit                  0x0803c8e5   Thumb Code   188  tasks.o(i.xTaskPriorityDisinherit)
-    xTaskPriorityInherit                     0x0803c9ad   Thumb Code   186  tasks.o(i.xTaskPriorityInherit)
-    xTaskRemoveFromEventList                 0x0803ca75   Thumb Code   128  tasks.o(i.xTaskRemoveFromEventList)
-    xTaskResumeAll                           0x0803cb0d   Thumb Code   224  tasks.o(i.xTaskResumeAll)
-    AHBPrescTable                            0x0803cc5c   Data          16  system_stm32f4xx.o(.constdata)
-    APBPrescTable                            0x0803cc6c   Data           8  system_stm32f4xx.o(.constdata)
-    SD_Driver                                0x0803cc80   Data          20  sd_diskio.o(.constdata)
-    _lv_bpp1_opa_table                       0x0803cd40   Data           2  lv_draw_label.o(.constdata)
-    _lv_bpp2_opa_table                       0x0803cd42   Data           4  lv_draw_label.o(.constdata)
-    _lv_bpp3_opa_table                       0x0803cd46   Data           8  lv_draw_label.o(.constdata)
-    _lv_bpp4_opa_table                       0x0803cd4e   Data          16  lv_draw_label.o(.constdata)
-    _lv_bpp8_opa_table                       0x0803cd5e   Data         256  lv_draw_label.o(.constdata)
-    lv_anim_path_def                         0x08040298   Data           8  lv_anim.o(.constdata)
-    Region$$Table$$Base                      0x08040b50   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08040b90   Number         0  anon$$obj.o(Region$$Table)
+    updata_task_memory                       0x0803a2dd   Thumb Code    50  osmonit.o(i.updata_task_memory)
+    uxListRemove                             0x0803a7db   Thumb Code    40  list.o(i.uxListRemove)
+    uxTaskGetNumberOfTasks                   0x0803a805   Thumb Code     6  tasks.o(i.uxTaskGetNumberOfTasks)
+    uxTaskGetStackHighWaterMark              0x0803a811   Thumb Code    34  tasks.o(i.uxTaskGetStackHighWaterMark)
+    uxTaskGetSystemState                     0x0803a839   Thumb Code   156  tasks.o(i.uxTaskGetSystemState)
+    uxTaskResetEventItemValue                0x0803a8f1   Thumb Code    24  tasks.o(i.uxTaskResetEventItemValue)
+    vApplicationGetIdleTaskMemory            0x0803a90d   Thumb Code    16  freertos.o(i.vApplicationGetIdleTaskMemory)
+    vListInitialise                          0x0803a925   Thumb Code    26  list.o(i.vListInitialise)
+    vListInitialiseItem                      0x0803a93f   Thumb Code     6  list.o(i.vListInitialiseItem)
+    vListInsert                              0x0803a945   Thumb Code    52  list.o(i.vListInsert)
+    vListInsertEnd                           0x0803a979   Thumb Code    24  list.o(i.vListInsertEnd)
+    vPortEnterCritical                       0x0803a991   Thumb Code    76  port.o(i.vPortEnterCritical)
+    vPortExitCritical                        0x0803a9e5   Thumb Code    56  port.o(i.vPortExitCritical)
+    vPortFree                                0x0803aa21   Thumb Code   140  heap_4.o(i.vPortFree)
+    vPortSetupTimerInterrupt                 0x0803aab5   Thumb Code    36  port.o(i.vPortSetupTimerInterrupt)
+    vPortValidateInterruptPriority           0x0803aadd   Thumb Code   106  port.o(i.vPortValidateInterruptPriority)
+    vTaskDelay                               0x0803ab55   Thumb Code    82  tasks.o(i.vTaskDelay)
+    vTaskGetInfo                             0x0803abb1   Thumb Code   126  tasks.o(i.vTaskGetInfo)
+    vTaskInternalSetTimeOutState             0x0803ac35   Thumb Code    14  tasks.o(i.vTaskInternalSetTimeOutState)
+    vTaskMissedYield                         0x0803ac4d   Thumb Code     8  tasks.o(i.vTaskMissedYield)
+    vTaskPlaceOnEventList                    0x0803ac59   Thumb Code    52  tasks.o(i.vTaskPlaceOnEventList)
+    vTaskPlaceOnUnorderedEventList           0x0803ac91   Thumb Code   100  tasks.o(i.vTaskPlaceOnUnorderedEventList)
+    vTaskPriorityDisinheritAfterTimeout      0x0803acfd   Thumb Code   230  tasks.o(i.vTaskPriorityDisinheritAfterTimeout)
+    vTaskRemoveFromUnorderedEventList        0x0803adf1   Thumb Code   142  tasks.o(i.vTaskRemoveFromUnorderedEventList)
+    vTaskStartScheduler                      0x0803ae95   Thumb Code   154  tasks.o(i.vTaskStartScheduler)
+    vTaskSuspendAll                          0x0803af4d   Thumb Code    12  tasks.o(i.vTaskSuspendAll)
+    vTaskSwitchContext                       0x0803af5d   Thumb Code   172  tasks.o(i.vTaskSwitchContext)
+    xEventGroupCreate                        0x0803b8e7   Thumb Code    30  event_groups.o(i.xEventGroupCreate)
+    xEventGroupSetBits                       0x0803b905   Thumb Code   206  event_groups.o(i.xEventGroupSetBits)
+    xEventGroupWaitBits                      0x0803b9d5   Thumb Code   338  event_groups.o(i.xEventGroupWaitBits)
+    xOSMonitTask                             0x0803bb2d   Thumb Code    40  osmonit.o(i.xOSMonitTask)
+    xPortGetFreeHeapSize                     0x0803bb6d   Thumb Code     6  heap_4.o(i.xPortGetFreeHeapSize)
+    xPortStartScheduler                      0x0803bb79   Thumb Code   330  port.o(i.xPortStartScheduler)
+    xQueueCreateMutex                        0x0803bce1   Thumb Code    34  queue.o(i.xQueueCreateMutex)
+    xQueueGenericCreate                      0x0803bd03   Thumb Code    96  queue.o(i.xQueueGenericCreate)
+    xQueueGenericCreateStatic                0x0803bd63   Thumb Code   224  queue.o(i.xQueueGenericCreateStatic)
+    xQueueGenericReset                       0x0803be45   Thumb Code   146  queue.o(i.xQueueGenericReset)
+    xQueueGenericSend                        0x0803bedd   Thumb Code   468  queue.o(i.xQueueGenericSend)
+    xQueueGenericSendFromISR                 0x0803c0b5   Thumb Code   264  queue.o(i.xQueueGenericSendFromISR)
+    xQueueReceive                            0x0803c1bd   Thumb Code   356  queue.o(i.xQueueReceive)
+    xQueueReceiveFromISR                     0x0803c325   Thumb Code   202  queue.o(i.xQueueReceiveFromISR)
+    xQueueSemaphoreTake                      0x0803c3f1   Thumb Code   434  queue.o(i.xQueueSemaphoreTake)
+    xTaskCheckForTimeOut                     0x0803c5a9   Thumb Code   132  tasks.o(i.xTaskCheckForTimeOut)
+    xTaskCreate                              0x0803c635   Thumb Code   100  tasks.o(i.xTaskCreate)
+    xTaskCreateStatic                        0x0803c699   Thumb Code   186  tasks.o(i.xTaskCreateStatic)
+    xTaskGetSchedulerState                   0x0803c755   Thumb Code    24  tasks.o(i.xTaskGetSchedulerState)
+    xTaskGetTickCount                        0x0803c775   Thumb Code     6  tasks.o(i.xTaskGetTickCount)
+    xTaskGetTickCountFromISR                 0x0803c781   Thumb Code    16  tasks.o(i.xTaskGetTickCountFromISR)
+    xTaskIncrementTick                       0x0803c795   Thumb Code   282  tasks.o(i.xTaskIncrementTick)
+    xTaskPriorityDisinherit                  0x0803c8dd   Thumb Code   188  tasks.o(i.xTaskPriorityDisinherit)
+    xTaskPriorityInherit                     0x0803c9a5   Thumb Code   186  tasks.o(i.xTaskPriorityInherit)
+    xTaskRemoveFromEventList                 0x0803ca6d   Thumb Code   128  tasks.o(i.xTaskRemoveFromEventList)
+    xTaskResumeAll                           0x0803cb05   Thumb Code   224  tasks.o(i.xTaskResumeAll)
+    AHBPrescTable                            0x0803cc54   Data          16  system_stm32f4xx.o(.constdata)
+    APBPrescTable                            0x0803cc64   Data           8  system_stm32f4xx.o(.constdata)
+    SD_Driver                                0x0803cc78   Data          20  sd_diskio.o(.constdata)
+    _lv_bpp1_opa_table                       0x0803cd38   Data           2  lv_draw_label.o(.constdata)
+    _lv_bpp2_opa_table                       0x0803cd3a   Data           4  lv_draw_label.o(.constdata)
+    _lv_bpp3_opa_table                       0x0803cd3e   Data           8  lv_draw_label.o(.constdata)
+    _lv_bpp4_opa_table                       0x0803cd46   Data          16  lv_draw_label.o(.constdata)
+    _lv_bpp8_opa_table                       0x0803cd56   Data         256  lv_draw_label.o(.constdata)
+    lv_anim_path_def                         0x08040290   Data           8  lv_anim.o(.constdata)
+    Region$$Table$$Base                      0x08040b48   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08040b88   Number         0  anon$$obj.o(Region$$Table)
     uwTick                                   0x10000000   Data           4  stm32f4xx_hal.o(.data)
     uwTickPrio                               0x10000004   Data           4  stm32f4xx_hal.o(.data)
     uwTickFreq                               0x10000008   Data           1  stm32f4xx_hal.o(.data)
@@ -15472,9 +15470,9 @@ Memory Map of the image
 
   Image Entry point : 0x080001ad
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00040eec, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x00040ca8])
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00040ee4, Max: 0x00100000, ABSOLUTE, COMPRESSED[0x00040ca0])
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00040b90, Max: 0x00100000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00040b88, Max: 0x00100000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -17017,133 +17015,133 @@ Memory Map of the image
     0x08038c30   0x08038c30   0x0000017c   Code   RO        21427    i.tabview_scrl_signal  lv_tabview.o
     0x08038dac   0x08038dac   0x00000564   Code   RO        14625    i.tabview_win_shared_init  lv_theme_material.o
     0x08039310   0x08039310   0x0000011c   Code   RO        14626    i.textarea_init     lv_theme_material.o
-    0x0803942c   0x0803942c   0x00000058   Code   RO         6500    i.tftlcd_task       tftlcd_opr.o
-    0x08039484   0x08039484   0x00000890   Code   RO        14627    i.theme_apply       lv_theme_material.o
-    0x08039d14   0x08039d14   0x00000002   Code   RO        14628    i.tileview_init     lv_theme_material.o
-    0x08039d16   0x08039d16   0x000000e4   Code   RO         8933    i.trans_anim_cb     lv_obj.o
-    0x08039dfa   0x08039dfa   0x00000002   PAD
-    0x08039dfc   0x08039dfc   0x00000074   Code   RO         8934    i.trans_anim_ready_cb  lv_obj.o
-    0x08039e70   0x08039e70   0x00000070   Code   RO         8935    i.trans_anim_start_cb  lv_obj.o
-    0x08039ee0   0x08039ee0   0x00000374   Code   RO         8936    i.trans_create      lv_obj.o
-    0x0803a254   0x0803a254   0x00000084   Code   RO         8937    i.trans_del         lv_obj.o
-    0x0803a2d8   0x0803a2d8   0x0000000a   Code   RO        12127    i.unicode_list_compare  lv_font_fmt_txt.o
-    0x0803a2e2   0x0803a2e2   0x00000002   PAD
-    0x0803a2e4   0x0803a2e4   0x0000003c   Code   RO          532    i.updata_task_memory  osmonit.o
-    0x0803a320   0x0803a320   0x000000d2   Code   RO        21697    i.update_cursor_position_on_click  lv_textarea.o
-    0x0803a3f2   0x0803a3f2   0x00000002   PAD
-    0x0803a3f4   0x0803a3f4   0x000002fc   Code   RO         8938    i.update_style_cache  lv_obj.o
-    0x0803a6f0   0x0803a6f0   0x000000f2   Code   RO         8939    i.update_style_cache_children  lv_obj.o
-    0x0803a7e2   0x0803a7e2   0x00000028   Code   RO         4787    i.uxListRemove      list.o
-    0x0803a80a   0x0803a80a   0x00000002   PAD
-    0x0803a80c   0x0803a80c   0x0000000c   Code   RO         5250    i.uxTaskGetNumberOfTasks  tasks.o
-    0x0803a818   0x0803a818   0x00000028   Code   RO         5251    i.uxTaskGetStackHighWaterMark  tasks.o
-    0x0803a840   0x0803a840   0x000000b8   Code   RO         5252    i.uxTaskGetSystemState  tasks.o
-    0x0803a8f8   0x0803a8f8   0x0000001c   Code   RO         5256    i.uxTaskResetEventItemValue  tasks.o
-    0x0803a914   0x0803a914   0x00000018   Code   RO          293    i.vApplicationGetIdleTaskMemory  freertos.o
-    0x0803a92c   0x0803a92c   0x0000001a   Code   RO         4788    i.vListInitialise   list.o
-    0x0803a946   0x0803a946   0x00000006   Code   RO         4789    i.vListInitialiseItem  list.o
-    0x0803a94c   0x0803a94c   0x00000034   Code   RO         4790    i.vListInsert       list.o
-    0x0803a980   0x0803a980   0x00000018   Code   RO         4791    i.vListInsertEnd    list.o
-    0x0803a998   0x0803a998   0x00000054   Code   RO         6074    i.vPortEnterCritical  port.o
-    0x0803a9ec   0x0803a9ec   0x0000003c   Code   RO         6075    i.vPortExitCritical  port.o
-    0x0803aa28   0x0803aa28   0x00000094   Code   RO         6011    i.vPortFree         heap_4.o
-    0x0803aabc   0x0803aabc   0x00000028   Code   RO         6076    i.vPortSetupTimerInterrupt  port.o
-    0x0803aae4   0x0803aae4   0x00000078   Code   RO         6077    i.vPortValidateInterruptPriority  port.o
-    0x0803ab5c   0x0803ab5c   0x0000005c   Code   RO         5257    i.vTaskDelay        tasks.o
-    0x0803abb8   0x0803abb8   0x00000084   Code   RO         5260    i.vTaskGetInfo      tasks.o
-    0x0803ac3c   0x0803ac3c   0x00000018   Code   RO         5262    i.vTaskInternalSetTimeOutState  tasks.o
-    0x0803ac54   0x0803ac54   0x0000000c   Code   RO         5264    i.vTaskMissedYield  tasks.o
-    0x0803ac60   0x0803ac60   0x00000038   Code   RO         5266    i.vTaskPlaceOnEventList  tasks.o
-    0x0803ac98   0x0803ac98   0x0000006c   Code   RO         5267    i.vTaskPlaceOnUnorderedEventList  tasks.o
-    0x0803ad04   0x0803ad04   0x000000f4   Code   RO         5268    i.vTaskPriorityDisinheritAfterTimeout  tasks.o
-    0x0803adf8   0x0803adf8   0x000000a4   Code   RO         5270    i.vTaskRemoveFromUnorderedEventList  tasks.o
-    0x0803ae9c   0x0803ae9c   0x000000b8   Code   RO         5274    i.vTaskStartScheduler  tasks.o
-    0x0803af54   0x0803af54   0x00000010   Code   RO         5276    i.vTaskSuspendAll   tasks.o
-    0x0803af64   0x0803af64   0x000000cc   Code   RO         5277    i.vTaskSwitchContext  tasks.o
-    0x0803b030   0x0803b030   0x00000102   Code   RO        15771    i.value_update      lv_arc.o
-    0x0803b132   0x0803b132   0x00000002   PAD
-    0x0803b134   0x0803b134   0x000007b8   Code   RO         7566    i.visuals_create    lv_demo_widgets.o
-    0x0803b8ec   0x0803b8ec   0x00000002   Code   RO        14629    i.win_init          lv_theme_material.o
-    0x0803b8ee   0x0803b8ee   0x0000001e   Code   RO         4687    i.xEventGroupCreate  event_groups.o
-    0x0803b90c   0x0803b90c   0x000000ce   Code   RO         4690    i.xEventGroupSetBits  event_groups.o
-    0x0803b9da   0x0803b9da   0x00000002   PAD
-    0x0803b9dc   0x0803b9dc   0x00000158   Code   RO         4692    i.xEventGroupWaitBits  event_groups.o
-    0x0803bb34   0x0803bb34   0x00000040   Code   RO          533    i.xOSMonitTask      osmonit.o
-    0x0803bb74   0x0803bb74   0x0000000c   Code   RO         6013    i.xPortGetFreeHeapSize  heap_4.o
-    0x0803bb80   0x0803bb80   0x00000168   Code   RO         6078    i.xPortStartScheduler  port.o
-    0x0803bce8   0x0803bce8   0x00000022   Code   RO         4846    i.xQueueCreateMutex  queue.o
-    0x0803bd0a   0x0803bd0a   0x00000060   Code   RO         4849    i.xQueueGenericCreate  queue.o
-    0x0803bd6a   0x0803bd6a   0x000000e0   Code   RO         4850    i.xQueueGenericCreateStatic  queue.o
-    0x0803be4a   0x0803be4a   0x00000002   PAD
-    0x0803be4c   0x0803be4c   0x00000098   Code   RO         4851    i.xQueueGenericReset  queue.o
-    0x0803bee4   0x0803bee4   0x000001d8   Code   RO         4852    i.xQueueGenericSend  queue.o
-    0x0803c0bc   0x0803c0bc   0x00000108   Code   RO         4853    i.xQueueGenericSendFromISR  queue.o
-    0x0803c1c4   0x0803c1c4   0x00000168   Code   RO         4859    i.xQueueReceive     queue.o
-    0x0803c32c   0x0803c32c   0x000000ca   Code   RO         4860    i.xQueueReceiveFromISR  queue.o
-    0x0803c3f6   0x0803c3f6   0x00000002   PAD
-    0x0803c3f8   0x0803c3f8   0x000001b8   Code   RO         4864    i.xQueueSemaphoreTake  queue.o
-    0x0803c5b0   0x0803c5b0   0x0000008c   Code   RO         5279    i.xTaskCheckForTimeOut  tasks.o
-    0x0803c63c   0x0803c63c   0x00000064   Code   RO         5280    i.xTaskCreate       tasks.o
-    0x0803c6a0   0x0803c6a0   0x000000ba   Code   RO         5281    i.xTaskCreateStatic  tasks.o
-    0x0803c75a   0x0803c75a   0x00000002   PAD
-    0x0803c75c   0x0803c75c   0x00000020   Code   RO         5285    i.xTaskGetSchedulerState  tasks.o
-    0x0803c77c   0x0803c77c   0x0000000c   Code   RO         5286    i.xTaskGetTickCount  tasks.o
-    0x0803c788   0x0803c788   0x00000014   Code   RO         5287    i.xTaskGetTickCountFromISR  tasks.o
-    0x0803c79c   0x0803c79c   0x00000148   Code   RO         5288    i.xTaskIncrementTick  tasks.o
-    0x0803c8e4   0x0803c8e4   0x000000c8   Code   RO         5291    i.xTaskPriorityDisinherit  tasks.o
-    0x0803c9ac   0x0803c9ac   0x000000c8   Code   RO         5292    i.xTaskPriorityInherit  tasks.o
-    0x0803ca74   0x0803ca74   0x00000098   Code   RO         5293    i.xTaskRemoveFromEventList  tasks.o
-    0x0803cb0c   0x0803cb0c   0x00000104   Code   RO         5294    i.xTaskResumeAll    tasks.o
-    0x0803cc10   0x0803cc10   0x0000001c   Data   RO           18    .constdata          main.o
-    0x0803cc2c   0x0803cc2c   0x00000028   Data   RO          535    .constdata          osmonit.o
-    0x0803cc54   0x0803cc54   0x00000008   Data   RO         1278    .constdata          stm32f4xx_hal_dma.o
-    0x0803cc5c   0x0803cc5c   0x00000018   Data   RO         4104    .constdata          system_stm32f4xx.o
-    0x0803cc74   0x0803cc74   0x00000009   Data   RO         6152    .constdata          log.o
-    0x0803cc7d   0x0803cc7d   0x00000003   PAD
-    0x0803cc80   0x0803cc80   0x00000024   Data   RO         6427    .constdata          sd_diskio.o
-    0x0803cca4   0x0803cca4   0x0000001c   Data   RO         6501    .constdata          tftlcd_opr.o
-    0x0803ccc0   0x0803ccc0   0x0000000d   Data   RO         7112    .constdata          tim.o
-    0x0803cccd   0x0803cccd   0x00000003   PAD
-    0x0803ccd0   0x0803ccd0   0x0000005e   Data   RO         7568    .constdata          lv_demo_widgets.o
-    0x0803cd2e   0x0803cd2e   0x00000002   PAD
-    0x0803cd30   0x0803cd30   0x00000002   Data   RO         8940    .constdata          lv_obj.o
-    0x0803cd32   0x0803cd32   0x00000002   PAD
-    0x0803cd34   0x0803cd34   0x0000000a   Data   RO        10784    .constdata          lv_draw_img.o
-    0x0803cd3e   0x0803cd3e   0x00000002   PAD
-    0x0803cd40   0x0803cd40   0x00000122   Data   RO        10936    .constdata          lv_draw_label.o
-    0x0803ce62   0x0803ce62   0x00000021   Data   RO        11049    .constdata          lv_draw_line.o
-    0x0803ce83   0x0803ce83   0x00000001   PAD
-    0x0803ce84   0x0803ce84   0x00000002   Data   RO        11342    .constdata          lv_draw_rect.o
-    0x0803ce86   0x0803ce86   0x00000002   PAD
-    0x0803ce88   0x0803ce88   0x00003408   Data   RO        12332    .constdata          lv_font_montserrat_14.o
-    0x08040290   0x08040290   0x00000006   Data   RO        12504    .constdata          lv_hal_disp.o
-    0x08040296   0x08040296   0x00000002   PAD
-    0x08040298   0x08040298   0x00000008   Data   RO        12935    .constdata          lv_anim.o
-    0x080402a0   0x080402a0   0x00000002   Data   RO        13259    .constdata          lv_color.o
-    0x080402a2   0x080402a2   0x00000011   Data   RO        13311    .constdata          lv_debug.o
-    0x080402b3   0x080402b3   0x00000001   PAD
-    0x080402b4   0x080402b4   0x000000b6   Data   RO        13644    .constdata          lv_math.o
-    0x0804036a   0x0804036a   0x00000002   PAD
-    0x0804036c   0x0804036c   0x00000046   Data   RO        14631    .constdata          lv_theme_material.o
-    0x080403b2   0x080403b2   0x00000002   PAD
-    0x080403b4   0x080403b4   0x00000376   Data   RO        18975    .constdata          lv_keyboard.o
-    0x0804072a   0x0804072a   0x00000002   PAD
-    0x0804072c   0x0804072c   0x0000000c   Data   RO           19    .conststring        main.o
-    0x08040738   0x08040738   0x00000030   Data   RO          536    .conststring        osmonit.o
-    0x08040768   0x08040768   0x00000004   Data   RO         6502    .conststring        tftlcd_opr.o
-    0x0804076c   0x0804076c   0x00000161   Data   RO         7569    .conststring        lv_demo_widgets.o
-    0x080408cd   0x080408cd   0x00000003   PAD
-    0x080408d0   0x080408d0   0x00000051   Data   RO        13702    .conststring        lv_mem.o
-    0x08040921   0x08040921   0x00000003   PAD
-    0x08040924   0x08040924   0x00000029   Data   RO        16415    .conststring        lv_btnmatrix.o
-    0x0804094d   0x0804094d   0x00000003   PAD
-    0x08040950   0x08040950   0x00000085   Data   RO        16667    .conststring        lv_calendar.o
-    0x080409d5   0x080409d5   0x00000003   PAD
-    0x080409d8   0x080409d8   0x00000178   Data   RO        18976    .conststring        lv_keyboard.o
-    0x08040b50   0x08040b50   0x00000040   Data   RO        22736    Region$$Table       anon$$obj.o
+    0x0803942c   0x0803942c   0x00000050   Code   RO         6500    i.tftlcd_task       tftlcd_opr.o
+    0x0803947c   0x0803947c   0x00000890   Code   RO        14627    i.theme_apply       lv_theme_material.o
+    0x08039d0c   0x08039d0c   0x00000002   Code   RO        14628    i.tileview_init     lv_theme_material.o
+    0x08039d0e   0x08039d0e   0x000000e4   Code   RO         8933    i.trans_anim_cb     lv_obj.o
+    0x08039df2   0x08039df2   0x00000002   PAD
+    0x08039df4   0x08039df4   0x00000074   Code   RO         8934    i.trans_anim_ready_cb  lv_obj.o
+    0x08039e68   0x08039e68   0x00000070   Code   RO         8935    i.trans_anim_start_cb  lv_obj.o
+    0x08039ed8   0x08039ed8   0x00000374   Code   RO         8936    i.trans_create      lv_obj.o
+    0x0803a24c   0x0803a24c   0x00000084   Code   RO         8937    i.trans_del         lv_obj.o
+    0x0803a2d0   0x0803a2d0   0x0000000a   Code   RO        12127    i.unicode_list_compare  lv_font_fmt_txt.o
+    0x0803a2da   0x0803a2da   0x00000002   PAD
+    0x0803a2dc   0x0803a2dc   0x0000003c   Code   RO          532    i.updata_task_memory  osmonit.o
+    0x0803a318   0x0803a318   0x000000d2   Code   RO        21697    i.update_cursor_position_on_click  lv_textarea.o
+    0x0803a3ea   0x0803a3ea   0x00000002   PAD
+    0x0803a3ec   0x0803a3ec   0x000002fc   Code   RO         8938    i.update_style_cache  lv_obj.o
+    0x0803a6e8   0x0803a6e8   0x000000f2   Code   RO         8939    i.update_style_cache_children  lv_obj.o
+    0x0803a7da   0x0803a7da   0x00000028   Code   RO         4787    i.uxListRemove      list.o
+    0x0803a802   0x0803a802   0x00000002   PAD
+    0x0803a804   0x0803a804   0x0000000c   Code   RO         5250    i.uxTaskGetNumberOfTasks  tasks.o
+    0x0803a810   0x0803a810   0x00000028   Code   RO         5251    i.uxTaskGetStackHighWaterMark  tasks.o
+    0x0803a838   0x0803a838   0x000000b8   Code   RO         5252    i.uxTaskGetSystemState  tasks.o
+    0x0803a8f0   0x0803a8f0   0x0000001c   Code   RO         5256    i.uxTaskResetEventItemValue  tasks.o
+    0x0803a90c   0x0803a90c   0x00000018   Code   RO          293    i.vApplicationGetIdleTaskMemory  freertos.o
+    0x0803a924   0x0803a924   0x0000001a   Code   RO         4788    i.vListInitialise   list.o
+    0x0803a93e   0x0803a93e   0x00000006   Code   RO         4789    i.vListInitialiseItem  list.o
+    0x0803a944   0x0803a944   0x00000034   Code   RO         4790    i.vListInsert       list.o
+    0x0803a978   0x0803a978   0x00000018   Code   RO         4791    i.vListInsertEnd    list.o
+    0x0803a990   0x0803a990   0x00000054   Code   RO         6074    i.vPortEnterCritical  port.o
+    0x0803a9e4   0x0803a9e4   0x0000003c   Code   RO         6075    i.vPortExitCritical  port.o
+    0x0803aa20   0x0803aa20   0x00000094   Code   RO         6011    i.vPortFree         heap_4.o
+    0x0803aab4   0x0803aab4   0x00000028   Code   RO         6076    i.vPortSetupTimerInterrupt  port.o
+    0x0803aadc   0x0803aadc   0x00000078   Code   RO         6077    i.vPortValidateInterruptPriority  port.o
+    0x0803ab54   0x0803ab54   0x0000005c   Code   RO         5257    i.vTaskDelay        tasks.o
+    0x0803abb0   0x0803abb0   0x00000084   Code   RO         5260    i.vTaskGetInfo      tasks.o
+    0x0803ac34   0x0803ac34   0x00000018   Code   RO         5262    i.vTaskInternalSetTimeOutState  tasks.o
+    0x0803ac4c   0x0803ac4c   0x0000000c   Code   RO         5264    i.vTaskMissedYield  tasks.o
+    0x0803ac58   0x0803ac58   0x00000038   Code   RO         5266    i.vTaskPlaceOnEventList  tasks.o
+    0x0803ac90   0x0803ac90   0x0000006c   Code   RO         5267    i.vTaskPlaceOnUnorderedEventList  tasks.o
+    0x0803acfc   0x0803acfc   0x000000f4   Code   RO         5268    i.vTaskPriorityDisinheritAfterTimeout  tasks.o
+    0x0803adf0   0x0803adf0   0x000000a4   Code   RO         5270    i.vTaskRemoveFromUnorderedEventList  tasks.o
+    0x0803ae94   0x0803ae94   0x000000b8   Code   RO         5274    i.vTaskStartScheduler  tasks.o
+    0x0803af4c   0x0803af4c   0x00000010   Code   RO         5276    i.vTaskSuspendAll   tasks.o
+    0x0803af5c   0x0803af5c   0x000000cc   Code   RO         5277    i.vTaskSwitchContext  tasks.o
+    0x0803b028   0x0803b028   0x00000102   Code   RO        15771    i.value_update      lv_arc.o
+    0x0803b12a   0x0803b12a   0x00000002   PAD
+    0x0803b12c   0x0803b12c   0x000007b8   Code   RO         7566    i.visuals_create    lv_demo_widgets.o
+    0x0803b8e4   0x0803b8e4   0x00000002   Code   RO        14629    i.win_init          lv_theme_material.o
+    0x0803b8e6   0x0803b8e6   0x0000001e   Code   RO         4687    i.xEventGroupCreate  event_groups.o
+    0x0803b904   0x0803b904   0x000000ce   Code   RO         4690    i.xEventGroupSetBits  event_groups.o
+    0x0803b9d2   0x0803b9d2   0x00000002   PAD
+    0x0803b9d4   0x0803b9d4   0x00000158   Code   RO         4692    i.xEventGroupWaitBits  event_groups.o
+    0x0803bb2c   0x0803bb2c   0x00000040   Code   RO          533    i.xOSMonitTask      osmonit.o
+    0x0803bb6c   0x0803bb6c   0x0000000c   Code   RO         6013    i.xPortGetFreeHeapSize  heap_4.o
+    0x0803bb78   0x0803bb78   0x00000168   Code   RO         6078    i.xPortStartScheduler  port.o
+    0x0803bce0   0x0803bce0   0x00000022   Code   RO         4846    i.xQueueCreateMutex  queue.o
+    0x0803bd02   0x0803bd02   0x00000060   Code   RO         4849    i.xQueueGenericCreate  queue.o
+    0x0803bd62   0x0803bd62   0x000000e0   Code   RO         4850    i.xQueueGenericCreateStatic  queue.o
+    0x0803be42   0x0803be42   0x00000002   PAD
+    0x0803be44   0x0803be44   0x00000098   Code   RO         4851    i.xQueueGenericReset  queue.o
+    0x0803bedc   0x0803bedc   0x000001d8   Code   RO         4852    i.xQueueGenericSend  queue.o
+    0x0803c0b4   0x0803c0b4   0x00000108   Code   RO         4853    i.xQueueGenericSendFromISR  queue.o
+    0x0803c1bc   0x0803c1bc   0x00000168   Code   RO         4859    i.xQueueReceive     queue.o
+    0x0803c324   0x0803c324   0x000000ca   Code   RO         4860    i.xQueueReceiveFromISR  queue.o
+    0x0803c3ee   0x0803c3ee   0x00000002   PAD
+    0x0803c3f0   0x0803c3f0   0x000001b8   Code   RO         4864    i.xQueueSemaphoreTake  queue.o
+    0x0803c5a8   0x0803c5a8   0x0000008c   Code   RO         5279    i.xTaskCheckForTimeOut  tasks.o
+    0x0803c634   0x0803c634   0x00000064   Code   RO         5280    i.xTaskCreate       tasks.o
+    0x0803c698   0x0803c698   0x000000ba   Code   RO         5281    i.xTaskCreateStatic  tasks.o
+    0x0803c752   0x0803c752   0x00000002   PAD
+    0x0803c754   0x0803c754   0x00000020   Code   RO         5285    i.xTaskGetSchedulerState  tasks.o
+    0x0803c774   0x0803c774   0x0000000c   Code   RO         5286    i.xTaskGetTickCount  tasks.o
+    0x0803c780   0x0803c780   0x00000014   Code   RO         5287    i.xTaskGetTickCountFromISR  tasks.o
+    0x0803c794   0x0803c794   0x00000148   Code   RO         5288    i.xTaskIncrementTick  tasks.o
+    0x0803c8dc   0x0803c8dc   0x000000c8   Code   RO         5291    i.xTaskPriorityDisinherit  tasks.o
+    0x0803c9a4   0x0803c9a4   0x000000c8   Code   RO         5292    i.xTaskPriorityInherit  tasks.o
+    0x0803ca6c   0x0803ca6c   0x00000098   Code   RO         5293    i.xTaskRemoveFromEventList  tasks.o
+    0x0803cb04   0x0803cb04   0x00000104   Code   RO         5294    i.xTaskResumeAll    tasks.o
+    0x0803cc08   0x0803cc08   0x0000001c   Data   RO           18    .constdata          main.o
+    0x0803cc24   0x0803cc24   0x00000028   Data   RO          535    .constdata          osmonit.o
+    0x0803cc4c   0x0803cc4c   0x00000008   Data   RO         1278    .constdata          stm32f4xx_hal_dma.o
+    0x0803cc54   0x0803cc54   0x00000018   Data   RO         4104    .constdata          system_stm32f4xx.o
+    0x0803cc6c   0x0803cc6c   0x00000009   Data   RO         6152    .constdata          log.o
+    0x0803cc75   0x0803cc75   0x00000003   PAD
+    0x0803cc78   0x0803cc78   0x00000024   Data   RO         6427    .constdata          sd_diskio.o
+    0x0803cc9c   0x0803cc9c   0x0000001c   Data   RO         6501    .constdata          tftlcd_opr.o
+    0x0803ccb8   0x0803ccb8   0x0000000d   Data   RO         7112    .constdata          tim.o
+    0x0803ccc5   0x0803ccc5   0x00000003   PAD
+    0x0803ccc8   0x0803ccc8   0x0000005e   Data   RO         7568    .constdata          lv_demo_widgets.o
+    0x0803cd26   0x0803cd26   0x00000002   PAD
+    0x0803cd28   0x0803cd28   0x00000002   Data   RO         8940    .constdata          lv_obj.o
+    0x0803cd2a   0x0803cd2a   0x00000002   PAD
+    0x0803cd2c   0x0803cd2c   0x0000000a   Data   RO        10784    .constdata          lv_draw_img.o
+    0x0803cd36   0x0803cd36   0x00000002   PAD
+    0x0803cd38   0x0803cd38   0x00000122   Data   RO        10936    .constdata          lv_draw_label.o
+    0x0803ce5a   0x0803ce5a   0x00000021   Data   RO        11049    .constdata          lv_draw_line.o
+    0x0803ce7b   0x0803ce7b   0x00000001   PAD
+    0x0803ce7c   0x0803ce7c   0x00000002   Data   RO        11342    .constdata          lv_draw_rect.o
+    0x0803ce7e   0x0803ce7e   0x00000002   PAD
+    0x0803ce80   0x0803ce80   0x00003408   Data   RO        12332    .constdata          lv_font_montserrat_14.o
+    0x08040288   0x08040288   0x00000006   Data   RO        12504    .constdata          lv_hal_disp.o
+    0x0804028e   0x0804028e   0x00000002   PAD
+    0x08040290   0x08040290   0x00000008   Data   RO        12935    .constdata          lv_anim.o
+    0x08040298   0x08040298   0x00000002   Data   RO        13259    .constdata          lv_color.o
+    0x0804029a   0x0804029a   0x00000011   Data   RO        13311    .constdata          lv_debug.o
+    0x080402ab   0x080402ab   0x00000001   PAD
+    0x080402ac   0x080402ac   0x000000b6   Data   RO        13644    .constdata          lv_math.o
+    0x08040362   0x08040362   0x00000002   PAD
+    0x08040364   0x08040364   0x00000046   Data   RO        14631    .constdata          lv_theme_material.o
+    0x080403aa   0x080403aa   0x00000002   PAD
+    0x080403ac   0x080403ac   0x00000376   Data   RO        18975    .constdata          lv_keyboard.o
+    0x08040722   0x08040722   0x00000002   PAD
+    0x08040724   0x08040724   0x0000000c   Data   RO           19    .conststring        main.o
+    0x08040730   0x08040730   0x00000030   Data   RO          536    .conststring        osmonit.o
+    0x08040760   0x08040760   0x00000004   Data   RO         6502    .conststring        tftlcd_opr.o
+    0x08040764   0x08040764   0x00000161   Data   RO         7569    .conststring        lv_demo_widgets.o
+    0x080408c5   0x080408c5   0x00000003   PAD
+    0x080408c8   0x080408c8   0x00000051   Data   RO        13702    .conststring        lv_mem.o
+    0x08040919   0x08040919   0x00000003   PAD
+    0x0804091c   0x0804091c   0x00000029   Data   RO        16415    .conststring        lv_btnmatrix.o
+    0x08040945   0x08040945   0x00000003   PAD
+    0x08040948   0x08040948   0x00000085   Data   RO        16667    .conststring        lv_calendar.o
+    0x080409cd   0x080409cd   0x00000003   PAD
+    0x080409d0   0x080409d0   0x00000178   Data   RO        18976    .conststring        lv_keyboard.o
+    0x08040b48   0x08040b48   0x00000040   Data   RO        22736    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM2 (Exec base: 0x10000000, Load base: 0x08040be4, Size: 0x00007288, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x000000c4])
+    Execution Region RW_IRAM2 (Exec base: 0x10000000, Load base: 0x08040bdc, Size: 0x00007288, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x000000c4])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -17187,7 +17185,7 @@ Memory Map of the image
     0x10003288        -       0x00004000   Zero   RW            1    STACK               startup_stm32f429xx.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08040b90, Size: 0x0002728c, Max: 0x00030000, ABSOLUTE, COMPRESSED[0x00000054])
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08040b88, Size: 0x0002728c, Max: 0x00030000, ABSOLUTE, COMPRESSED[0x00000054])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -17349,12 +17347,12 @@ Image component sizes
         28          4         24          4          0       1151   system_stm32f4xx.o
       4362        496          0         68        240      38878   tasks.o
      10880        112          0          0         14      14975   tftlcd_arg.o
-       164         58         32         24          0      32214   tftlcd_opr.o
+       156         58         32         24          0      32318   tftlcd_opr.o
        380        100         13          8         64       3124   tim.o
        232         28          0          0         64       2358   usart.o
 
     ----------------------------------------------------------------------
-    246226      11214      16684        856     188856    3786364   Object Totals
+    246218      11214      16684        856     188856    3786468   Object Totals
          0          0         64          0          0          0   (incl. Generated)
        198          0         36         12          2          0   (incl. Padding)
 
@@ -17413,15 +17411,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-    248420      11284      16684        860     188856    3640460   Grand Totals
-    248420      11284      16684        280     188856    3640460   ELF Image Totals (compressed)
-    248420      11284      16684        280          0          0   ROM Totals
+    248412      11284      16684        860     188856    3640564   Grand Totals
+    248412      11284      16684        280     188856    3640564   ELF Image Totals (compressed)
+    248412      11284      16684        280          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)               265104 ( 258.89kB)
+    Total RO  Size (Code + RO Data)               265096 ( 258.88kB)
     Total RW  Size (RW Data + ZI Data)            189716 ( 185.27kB)
-    Total ROM Size (Code + RO Data + RW Data)     265384 ( 259.16kB)
+    Total ROM Size (Code + RO Data + RW Data)     265376 ( 259.16kB)
 
 ==============================================================================
 
