@@ -3,6 +3,8 @@
 #include "rtc.h"
 #include <osmonit.h>
 
+// 待测试     by CJQ2805
+
 void sys_standby(void)
 {
 	__HAL_RCC_AHB1_FORCE_RESET(); //复位所有 IO 口

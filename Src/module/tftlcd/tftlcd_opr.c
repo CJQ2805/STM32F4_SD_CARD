@@ -8,7 +8,7 @@
 #include "gui_app_start.h"
 #include "gui_app_test.h"
 
-char c[] = "TFTLCD TEST  CJQ";
+char c[] = "TFTLCD TEST  CJQ2805";
 
 #define PAGE_REG(name)\
 do{\
