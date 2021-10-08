@@ -1210,7 +1210,7 @@ void LCD_Init(void)
 		LCD_WR_DATA(0x55);	//66
 
 		LCD_WR_REG(0x11);
-//		delay_ms(100);
+		delay_ms(100);
 		LCD_WR_REG(0x29);
 		LCD_WR_REG(0x35);
 		LCD_WR_DATA(0x00);
@@ -1643,10 +1643,10 @@ void LCD_Init(void)
 //		delay_us(100);
 		LCD_WR_REG(0xE0);		// Start PLL command
 		LCD_WR_DATA(0x01);		// enable PLL
-//		delay_ms(10);
+		delay_ms(10);
 		LCD_WR_REG(0xE0);		// Start PLL command again
 		LCD_WR_DATA(0x03);		// now, use PLL output as system clock	
-//		delay_ms(12);  
+		delay_ms(12);  
 		LCD_WR_REG(0x01);		//软复位
 //		delay_ms(10);
 		
@@ -1717,9 +1717,9 @@ void LCD_Init(void)
 		FMC_Bank1E->BWTR[0]|=4<<8; 		//数据保存时间(DATAST)为5.2ns*4个HCLK=21ns
 	} 
 	LCD_Display_Dir(0);		//默认为竖屏
-					//点亮背光
-	LCD_Clear(WHITE);
-	LCD_LED=1;	
+	LCD_Clear(WHITE);		
+
+	LCD_LED= 1;	//点亮背光
 }  
 
 

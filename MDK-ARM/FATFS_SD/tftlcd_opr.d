@@ -52,6 +52,8 @@ fatfs_sd\tftlcd_opr.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fmc.h
 fatfs_sd\tftlcd_opr.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_iwdg.h
 fatfs_sd\tftlcd_opr.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 fatfs_sd\tftlcd_opr.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+fatfs_sd\tftlcd_opr.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
+fatfs_sd\tftlcd_opr.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
 fatfs_sd\tftlcd_opr.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
 fatfs_sd\tftlcd_opr.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 fatfs_sd\tftlcd_opr.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
@@ -152,3 +154,5 @@ fatfs_sd\tftlcd_opr.o: ..\Src\middle\GUI\lvgl/src/lv_draw/lv_img_cache.h
 fatfs_sd\tftlcd_opr.o: ..\Src\middle\GUI\lvgl/src/lv_api_map.h
 fatfs_sd\tftlcd_opr.o: ..\Src\middle\GUI\lvgl/src/../lvgl.h
 fatfs_sd\tftlcd_opr.o: ..\Src\middle\GUI\lvgl_app\lv_examples\src\lv_demo_widgets\lv_demo_widgets.h
+fatfs_sd\tftlcd_opr.o: ..\Src\module\gui\gui_app_start.h
+fatfs_sd\tftlcd_opr.o: ..\Src\module\gui\gui_app_test.h

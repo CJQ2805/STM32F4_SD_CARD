@@ -29,17 +29,16 @@ void MX_FMC_Init(void)
 	SRAM_Handler.Init.ExtendedMode=FMC_EXTENDED_MODE_ENABLE;        //读写使用不同的时序
 	SRAM_Handler.Init.AsynchronousWait=FMC_ASYNCHRONOUS_WAIT_DISABLE;//是否使能同步传输模式下的等待信号,此处未用到
 	SRAM_Handler.Init.WriteBurst=FMC_WRITE_BURST_DISABLE;           //禁止突发写
-	SRAM_Handler.Init.ContinuousClock=FMC_CONTINUOUS_CLOCK_SYNC_ASYNC;
-    SRAM_Handler.Init.WrapMode = FMC_WRAP_MODE_DISABLE;    
+   
 	//FMC读时序控制寄存器
-	FMC_ReadWriteTim.AddressSetupTime=0x0F;        //地址建立时间(ADDSET)为15个HCLK 1/180M*15=5.5ns*15=82.5ns
+	FMC_ReadWriteTim.AddressSetupTime=0x06;        //地址建立时间(ADDSET)为15个HCLK 1/180M*15=5.5ns*15=82.5ns
 	FMC_ReadWriteTim.AddressHoldTime=0x00;
-	FMC_ReadWriteTim.DataSetupTime=0x46;           //数据保存时间(DATAST)为70个HCLK	=5.5*70=385ns
+	FMC_ReadWriteTim.DataSetupTime= 26;           //数据保存时间(DATAST)为70个HCLK	=5.5*70=385ns
 	FMC_ReadWriteTim.AccessMode=FMC_ACCESS_MODE_A; //模式A
 	//FMC写时序控制寄存器
-	FMC_WriteTim.AddressSetupTime=0x0F;            //地址建立时间(ADDSET)为15个HCLK=82.5ns
+	FMC_WriteTim.AddressSetupTime=3;            //地址建立时间(ADDSET)为15个HCLK=82.5ns
 	FMC_WriteTim.AddressHoldTime=0x00;
-	FMC_WriteTim.DataSetupTime=0x0F;               //数据保存时间(DATAST)为5.5ns*15个HCLK=82.5ns
+	FMC_WriteTim.DataSetupTime=0x06;               //数据保存时间(DATAST)为5.5ns*15个HCLK=82.5ns
 	FMC_WriteTim.AccessMode=FMC_ACCESS_MODE_A;     //模式A
 	HAL_SRAM_Init(&SRAM_Handler,&FMC_ReadWriteTim,&FMC_WriteTim);		
 

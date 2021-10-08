@@ -36,6 +36,8 @@ fatfs_sd\sd_card_process.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fmc
 fatfs_sd\sd_card_process.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_iwdg.h
 fatfs_sd\sd_card_process.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 fatfs_sd\sd_card_process.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+fatfs_sd\sd_card_process.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
+fatfs_sd\sd_card_process.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
 fatfs_sd\sd_card_process.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sd.h
 fatfs_sd\sd_card_process.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h
 fatfs_sd\sd_card_process.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
@@ -60,3 +62,4 @@ fatfs_sd\sd_card_process.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/e
 fatfs_sd\sd_card_process.o: ../Middlewares/Third_Party/FatFs/src/ff_gen_drv.h
 fatfs_sd\sd_card_process.o: ../Middlewares/Third_Party/FatFs/src/diskio.h
 fatfs_sd\sd_card_process.o: ..\Src\middle\fatfs\sd_diskio.h
+fatfs_sd\sd_card_process.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h

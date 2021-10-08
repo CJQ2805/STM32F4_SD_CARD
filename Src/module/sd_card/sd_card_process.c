@@ -1,5 +1,6 @@
 #include <sd_card_process.h>
 #include "fatfs.h"
+#include "string.h"
 
 char test1_string[100] = "aa , bb , cc , dd \r\n";
 char test2_string[100] = "ee , ff , gg , hh \r\n";
@@ -42,3 +43,5 @@ void sd_card_write()
 
 	f_close(&file);
 }
+
+

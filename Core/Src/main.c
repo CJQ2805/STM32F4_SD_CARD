@@ -29,6 +29,9 @@
 #include "key.h"
 #include <tftlcd_opr.h>
 #include <tftlcd_arg.h>
+#include "lv_port_disp.h"
+#include "rtc.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -60,6 +63,7 @@ osThreadId defaultTaskHandle;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 
+void LVGL_init();
 
 void StartDefaultTask(void const * argument);
 
@@ -107,8 +111,14 @@ int main(void)
   MX_SDIO_SD_Init();
   MX_USART1_UART_Init();
   MX_FATFS_Init();
-  KEY_Init();
+//  KEY_Init();
   Log_init();
+  RTC_Init();
+
+
+  //LVGL init
+  LVGL_init();  
+  
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -153,6 +163,14 @@ int main(void)
   /* USER CODE END 3 */
 }
 
+
+
+void LVGL_init()
+{
+	lv_init();
+	lv_port_disp_init();	
+	
+}
 /**
   * @brief System Clock Configuration
   * @retval None

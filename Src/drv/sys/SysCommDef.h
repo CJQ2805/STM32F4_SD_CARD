@@ -6,13 +6,16 @@
 
 #include "cmsis_os.h"
 #include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal_def.h"
 #include  "log.h"
 #include <string.h>
 #include <stdio.h> 
 #include <stdarg.h> 
 #include <sys_data_type.h>
 
-
+#include "stm32f4xx.h"
+#include "Legacy/stm32_hal_legacy.h"
+#include <stddef.h>
 void sys_reboot(void);
 
 /*定义STM32 MCU的类型*/

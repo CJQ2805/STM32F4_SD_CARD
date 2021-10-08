@@ -543,7 +543,7 @@ void get_task_run_time_stat(void)
 {
 	u8 u8key = 0;
 	
-	u8key = KEY_Scan(0);
+//	u8key = KEY_Scan(0);
 	if(u8key == WKUP_PRES)
 	{
 		vTaskGetRunTimeStats(g_tOSMonitArg.acinfo_buff);

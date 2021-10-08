@@ -32,7 +32,7 @@
  * Include the generic headers required for the FreeRTOS port being used.
  */
 #include <stddef.h>
-
+void MX_FREERTOS_Init(void);
 /*
  * If stdint.h cannot be located then:
  *   + If using GCC ensure the -nostdint options is *not* being used.
