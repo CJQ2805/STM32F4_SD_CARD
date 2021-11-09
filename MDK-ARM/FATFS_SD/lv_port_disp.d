@@ -151,3 +151,5 @@ fatfs_sd\lv_port_disp.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
 fatfs_sd\lv_port_disp.o: ..\Src\drv\sys\SysCommDef.h
 fatfs_sd\lv_port_disp.o: ..\Src\drv\uart\usart.h
 fatfs_sd\lv_port_disp.o: ..\Src\drv\sys\sys_data_type.h
+fatfs_sd\lv_port_disp.o: ..\Src\drv\lcd_dma\lcd_dma.h
+fatfs_sd\lv_port_disp.o: ..\Src\middle\GUI\lvgl\examples\porting\lv_port_disp.h

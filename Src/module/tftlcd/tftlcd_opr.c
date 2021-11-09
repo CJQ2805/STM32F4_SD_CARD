@@ -36,7 +36,8 @@ static void tftlcd_task(void const * argument)
 	lv_demo_widgets();
 	for(;;){ 
 			
-		lv_task_handler();	
+		lv_task_handler();
+	
 		oSMonitOsDelay(1);
 	}
 }

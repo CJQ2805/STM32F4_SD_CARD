@@ -11,6 +11,7 @@
  *********************/
 #include "lv_port_disp.h"
 #include <tftlcd_arg.h>
+#include <lcd_dma.h>
 /*********************
  *      DEFINES
  *********************/
@@ -137,24 +138,27 @@ static void disp_init(void)
 /* Flush the content of the internal buffer the specific area on the display
  * You can use DMA or any hardware acceleration to do this operation in the background but
  * 'lv_disp_flush_ready()' has to be called when finished. */
+lv_disp_drv_t * disp_drv_p;
 static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_color_t * color_p)
 {
     /*The most simple case (but also the slowest) to put all pixels to the screen one-by-one*/
 
-    int32_t x;
-    int32_t y;
-    for(y = area->y1; y <= area->y2; y++) {
-        for(x = area->x1; x <= area->x2; x++) {
-            /* Put a pixel to the display. For example: */
-            /* put_px(x, y, *color_p)*/
-			LCD_Fast_DrawPoint(x, y , color_p->full);
-            color_p++;
-        }
-    }
-
+//    int32_t x;
+//    int32_t y;
+//    for(y = area->y1; y <= area->y2; y++) {
+//        for(x = area->x1; x <= area->x2; x++) {
+//            /* Put a pixel to the display. For example: */
+//            /* put_px(x, y, *color_p)*/
+//			LCD_Fast_DrawPoint(x, y , color_p->full);
+//            color_p++;
+//        }
+//    }
+		disp_drv_p = disp_drv;	
+//	LCD_Color_Fill(area->x1,area->y1,area->x2,area->y2,(u16*)color_p);
+		display_bitmap(area->x1,area->y1,area->x2,area->y2,(u16*)color_p);
     /* IMPORTANT!!!
      * Inform the graphics library that you are ready with the flushing*/
-    lv_disp_flush_ready(disp_drv);
+ //   lv_disp_flush_ready(disp_drv);
 }
 
 /*OPTIONAL: GPU INTERFACE*/

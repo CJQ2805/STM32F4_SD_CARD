@@ -62,6 +62,7 @@
 "fatfs_sd\sdio.o"
 "fatfs_sd\low_power.o"
 "fatfs_sd\syscommdef.o"
+"fatfs_sd\lcd_dma.o"
 "fatfs_sd\lv_port_disp.o"
 "fatfs_sd\lv_demo_widgets.o"
 "fatfs_sd\lv_disp.o"

@@ -107,10 +107,10 @@ int main(void)
   MX_FMC_Init();
   LCD_Init(); 
 
-  MX_DMA_Init();
-  MX_SDIO_SD_Init();
+//  MX_DMA_Init();
+//  MX_SDIO_SD_Init();
   MX_USART1_UART_Init();
-  MX_FATFS_Init();
+//  MX_FATFS_Init();
 //  KEY_Init();
   Log_init();
   RTC_Init();
@@ -118,7 +118,7 @@ int main(void)
 
   //LVGL init
   LVGL_init();  
-  
+  DMA_fsmc_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */

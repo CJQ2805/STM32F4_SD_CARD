@@ -300,11 +300,11 @@
               <OCR_RVCT9>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x30000</Size>
+                <Size>0x20000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
-                <StartAddress>0x10000000</StartAddress>
+                <StartAddress>0x20020000</StartAddress>
                 <Size>0x10000</Size>
               </OCR_RVCT10>
             </OnChipMemories>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F429xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../FATFS/Target;../FATFS/App;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\Src\drv\tim;..\Src\drv\uart;..\Src\drv\sdio;..\Src\drv\sys;..\Src\drv\fmc;..\Src\module\tftlcd;..\Middlewares\Third_Party\FreeRTOS\Source;..\Src\tools;..\Src\middle\fatfs;..\Src\module\sd_card;..\Src\tools\key;..\Src\middle\GUI;..\Src\middle\GUI\lvgl;..\Src\middle\GUI\lvgl\examples\porting;..\Src\middle\GUI\lvgl_app\lv_examples\src\lv_demo_widgets;..\Src\module\gui;..\Src\middle\GUI\lvgl_imge;..\Src\module\gui;..\Src\drv\rtc;..\Src\drv\standby</IncludePath>
+              <IncludePath>../Core/Inc;../FATFS/Target;../FATFS/App;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/Third_Party/FatFs/src;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\Src\drv\tim;..\Src\drv\uart;..\Src\drv\sdio;..\Src\drv\sys;..\Src\drv\fmc;..\Src\module\tftlcd;..\Middlewares\Third_Party\FreeRTOS\Source;..\Src\tools;..\Src\middle\fatfs;..\Src\module\sd_card;..\Src\tools\key;..\Src\middle\GUI;..\Src\middle\GUI\lvgl;..\Src\middle\GUI\lvgl\examples\porting;..\Src\middle\GUI\lvgl_app\lv_examples\src\lv_demo_widgets;..\Src\module\gui;..\Src\middle\GUI\lvgl_imge;..\Src\module\gui;..\Src\drv\rtc;..\Src\drv\standby;..\Src\drv\lcd_dma</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -751,6 +751,11 @@
               <FileName>SysCommDef.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\drv\sys\SysCommDef.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\drv\lcd_dma\lcd_dma.c</FilePath>
             </File>
           </Files>
         </Group>
